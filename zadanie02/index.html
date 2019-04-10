@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Zadanie 2.</title>
+
+        <link href="css/style.css" rel="stylesheet"/>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+			$(document).ready(function()
+				{
+				// tu pisz swoje skrypty -----------
+
+                    $('.element2').hover(function(){
+                        $('.zmiana1').css("color","white");
+                    },function(){
+                        $('.zmiana1').css("color","black");
+                        });
+                    $('.element3').hover(function(){
+                        $('.zmiana2').css("color","white");
+                        },function(){
+                        $('.zmiana2').css("color","black");
+                        });
+                }
+			)
+	    </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Przykłady naszych realizacji</h1>
+            <div class="flex-container">
+                <div class="element1 element">
+                    <div class="tekst1 bialy">
+                        <h2>Lewiatan</h2>
+                        <h4>aplikacja Lewiatan Biznes</h4>
+                    </div>
+                </div>
+
+                <div class="element2 element">
+                    <div class="tekst2 zmiana1">
+                        <h4>Provident</h4>
+                        <div class="do-dolu">
+                            <h5>Nowoczesna platforma komunikacyjna</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="element3 element">
+                    <div class="tekst2 zmiana2">
+                        <h4>Stock Polska</h4>
+                        <div class="do-dolu">
+                            <h5>Nowoczesna platforma komunikacyjna</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="element4 element">
+                    <div class="tekst2 bialy">
+                        <h4>Santander</h4>
+                        <div class="do-dolu">
+                            <h5>Serwis korporacyjny</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

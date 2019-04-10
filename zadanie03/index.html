@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Zadanie 3.</title>
+
+        <link href="css/style.css" rel="stylesheet"/>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+			$(document).ready(function()
+				{
+				// tu pisz swoje skrypty -----------
+            $(window).scroll(function (event) {
+                var scroll = $(window).scrollTop();
+                if(scroll>20){
+                    $(".baner").css({"top": "0","height": "40px","font-size":"17px"});
+                }
+                if(scroll<20){
+                    $(".baner").css({"top": "50px","height": "70px","font-size":"22px"});
+                }
+            });
+            $('.karuzela').css("background-image", 'url("obrazy/mapa.jpg")');
+            //url("obrazy/podroznik.jpg")
+				// ---------------------------------
+				}
+			)
+	    </script>
+    </head>
+    <body>
+        <!-- ikony
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        -->
+
+        <div class="menu-gorne">
+            <div class="usuwalne">
+                <ul class="menu">
+                    <li class="zakladki">Projekt</li>
+                    <li class="zakladki">SWISS contribution</li>
+                    <li class="zakladki">Mapa serwisu</li>
+                    <li class="zakladki">Oferty pracy</li>
+                    <li class="zakladki">Zapytania ofertowe</li>
+                    <li class="zakladki ostatni">Zmień język</li>
+                </ul>
+            </div>
+        </div>
+        <div class="baner">
+            <!-- logo <img src="" alt=""> -->
+            <ul class="menu">
+                <li class="zakladki">Oferta</li>
+                <li class="zakladki">Nasz zespół</li>
+                <li class="zakladki">Wiadomości</li>
+                <li class="zakladki">Realizacje</li>
+                <li class="zakladki">Kontakt</li>
+            </ul>
+        </div>
+        <div class="karuzela">
+            <h1>Kampanie Public Relationship</h1>
+        </div>
+    </body>
+</html>

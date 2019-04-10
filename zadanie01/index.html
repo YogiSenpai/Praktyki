@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Zadanie 1.</title>
+
+        <link href="css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>div#id <span class="czarny">lub</span> div.klasa <span class="czarny">lub</span> div#id.klasa1.klasa2.klasa3</h1>
+        <h2>Znak '.' tworzy element z podaną klasą, a znak '#' z identyfikatorem. Można także utworzyć element jednocześnie z klasami i identyfikatorem (jeśli nie wpiszemy nazwy elementu, domyślnym elementem jest div).</h2>
+
+        <h1>div>ul>li</h1>
+        <h2>Znaku '>' używamy, by zagnieździć kilka elementów (tutaj kolejne punkty listy będą w divie).</h2>
+
+        <h1>ul>li*5</h1>
+        <h2>Znaku '*' używamy, by stworzyć kilka takich samych elementów.</h2>
+
+        <h1>(div>span.klasa)*3</h1>
+        <h2>Możemy także multiplikować grupy elementów, wstawiając je w '()'.</h2>
+
+        <h1>div>p^span</h1>
+        <h2>Znaku '^' używamy, gdy chcemy wyjść z jakiegoś elementu (tutaj span, będzie poza divem).</h2>
+
+        <h1>ul>li.klasa$*5</h1>
+        <h2>Znaku '*' możemy także użyć po znaku '$' przy tworzeniu klas. Utworzone zostaną klasy z kolejnymi cyframi (tutaj: klasa1, klasa2 itd.).</h2>
+
+        <h1>ul>li.klasa$@-3*5</h1>
+        <h2>Możemy stosować różne kombinacje. Kombinacja '@-' po znaku '$' odwróci numerację, a liczba przed znakiem '*' zmieni domyślną liczbę początkową (ten kod utworzy elementy z klasami: klasa7, klasa6, ... , klasa3).</h2>
+
+        <h1>p>{tekst1}+a{tekst2}</h1>
+        <h2>Możemy utworzyć elementy z tekstem stosując '{}'. Kiedy użyjemy '>' pomiędzy znacznikiem a '{', późniejszy element dodany po '+' będzie zawarty w początkowym elemencie.</h2>
+
+        <h1>td[title="Hello world!" colspan=3]</h1>
+        <h2>Stosując '[]' możemy określać atrybuty elementów.</h2>
+
+        <h1>bg <span class="czarny">lub</span> @m <span class="czarny">lub</span> d</h1>
+        <h2>W CSS możemy używać skrótów (np. bg -> background: #000; @m -> @media screen {} d -> display: block;).</h2>
+    </body>
+</html>

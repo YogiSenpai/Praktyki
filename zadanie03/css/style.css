@@ -1,0 +1,40 @@
+.menu-gorne{
+    height:50px;
+}
+.menu{
+    list-style-type: none;
+    float:right;
+}
+
+.zakladki{
+    display: inline;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+.ostatni{
+    border:none;
+}
+.baner{
+    background-color: black;
+    height:70px;
+    width:100%;
+    color:white;
+    font-size: 22px;
+    position: fixed;
+    left:0;
+    right:0;
+    top:50px;
+    transition-duration: 0.1s;
+}
+.karuzela img{
+    width:100%;
+}
+.karuzela{
+    width:100%;
+    height:800px;
+    text-align:center;
+}
+.karuzela h1{
+    padding-top:20%;
+    color:white;
+}

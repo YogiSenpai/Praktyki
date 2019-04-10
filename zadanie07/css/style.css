@@ -1,0 +1,46 @@
+.menu-gorne{
+    height:39px;
+    background-color: black;
+    color: white;
+    border-bottom: 1px dotted rgb(50, 50, 50);
+    width:100%;
+    top:0;
+    left:0;
+    right:0;
+    position: absolute;
+}
+.telefon{
+    margin-top:-5px;
+    margin-left:10%;
+    width:30%;
+}
+.menu{
+    list-style-type: none;
+    justify-content: center;
+}
+
+.zakladki{
+    display: inline;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+.zakladki a{
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+}
+.baner{
+    background-color: black;
+    height:70px;
+    position: fixed;
+    left:0;
+    right:0;
+    top:40px;
+    transition-duration: 0.1s;
+    display:flex;
+    justify-content: center;
+}
+.baner img{
+    height:80%;
+    margin:auto;
+}
