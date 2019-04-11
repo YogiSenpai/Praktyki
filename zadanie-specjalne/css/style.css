@@ -1,0 +1,15 @@
+div{
+    position: relative;
+}
+img{
+    position: absolute;
+}
+div:hover .cien{
+    z-index: 2;
+}
+.obraz{
+    z-index: 1;
+}
+.cien{
+    z-index: 0;
+}

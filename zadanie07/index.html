@@ -4,32 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
     <title>Zadanie 7.</title>
 
     <link href="css/style.css" rel="stylesheet"/>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-        
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script defer>
+
+        $(document).ready(function(){
+
+
+                $(window).scroll(function (event) {
+                    var scroll = $(window).scrollTop();
+                    if(scroll>50){
+                        $(".baner").css({"top": "0","height": "60px"});
+                        $(".menu").css({"line-height":"40px"});
+                    }
+                    else if(scroll<50){
+                        $(".baner").css({"top": "40px","height": "100px"});
+                        $(".menu").css({"line-height":"70px"});
+                    }
+                });
+
+                    $("#menu-logo").click(function(){
+                        $('.menu-z-prawej').stop().slideToggle(200);
+                    });
+        });
+
+            document.addEventListener("DOMContentLoaded", function() {
+
+            const pierwszy = document.getElementById("pierwszy");
+            const drugi = document.getElementById("drugi");
+
+            let numer = 2;
+
+            const time = setInterval(function() {
+                if(numer===2){
+                    pierwszy.style.opacity = "1";
+                    drugi.style.opacity = "0";
+                    numer=1;
+                }
+                else{
+                    pierwszy.style.opacity = "0";
+                    drugi.style.opacity = "1";
+                    numer=2
+                }
+            }, 5000);
+            });
     </script>
 </head>
 <body>
-    <div class="menu-gorne">
-        <div class="telefon">
-            <p>+48 737 900 850</p>
+    <div class="container">
+        <div class="menu-z-prawej">
+            <ul class="zakladki-z-prawej">
+                <a href="#"><li>NOWOŚCI</li></a>
+                <a href="#"><li>O NAS</li></a>
+                <a href="#"><li>INICJATYWY</li></a>
+                <a href="#"><li>WESPRZYJ NAS</li></a>
+                <a href="#"><li>KONTAKT</li></a>
+                <a href="#"><li>4. LECHSTARTER</li></a>
+            </ul>
         </div>
-    </div>
+        <div class="menu-gorne">
+            <div class="telefon">
+                <p>+48 737 900 850</p>
+            </div>
+        </div>
 
-    <div class="baner">
-        <ul class="menu">
-            <li class="zakladki"><img src="obrazy/logo.png" alt="logo"></li>
-            <li class="zakladki"><a href="#">NOWOŚCI</a></li>
-            <li class="zakladki"><a href="#">O NAS</a></li>
-            <li class="zakladki"><a href="#">INICJATYWY</a></li>
-            <li class="zakladki"><a href="#">WESPRZYJ NAS</a></li>
-            <li class="zakladki"><a href="#">KONTAKT</a></li>
-            <li class="zakladki"><a href="#">4. LECHSTARTER</a></li>
-        </ul>
+        <div class="baner">
+            <div class="mini-container">
+                <div class="logo">
+                    <a href="#"><img src="obrazy/logo.png" alt="logo"></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="zakladki"><a href="#">NOWOŚCI</a></li>
+                        <li class="zakladki"><a href="#">O NAS</a></li>
+                        <li class="zakladki"><a href="#">INICJATYWY</a></li>
+                        <li class="zakladki"><a href="#">WESPRZYJ NAS</a></li>
+                        <li class="zakladki"><a href="#">KONTAKT</a></li>
+                        <li class="zakladki"><a href="#">4. LECHSTARTER</a></li>
+                    </ul>
+                </div>
+                <div id="menu-logo">
+                    <img src="obrazy/menu.png" alt="menu">
+                </div>
+                <div class="szukaj">
+
+                </div>
+            </div>
+        </div>
+        <div class="glowna">
+            <a href="#"><img id="pierwszy" src="obrazy/glowna1.jpg"></a>
+            <a href="#"><img id="drugi" src="obrazy/glowna2.jpg"></a>
+        </div>
+        <div class="header">
+            <h1>ODKRYWAMY. INSPIRUJEMY. TWORZYMY. WSPIERAMY.</h1>
+            <h3>zmieniamy świat na lepszy</h3>
+        </div>
+        <div class="mini-header">
+            <img src="obrazy/obrazek.jpg" alt="kostki">
+            <div class="text">
+                <div class="text-in-text">
+                <h5>Kim jesteśmy?</h5>
+                <h1>FUNDACJA RZESZOWSKA</h1>
+                <p>Jesteśmy pasjonatami, którzy wierzą, że działając wspólnie mogą zmienić świat na lepszy. Łączy nas pragnienie odkrywania historii i dziedzictwa regionalnego oraz chęć współtworzenia kultury i kształtowania tożsamości podkarpackiej.</p>
+                <a href="#"><button>O nas</button></a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
