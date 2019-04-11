@@ -1,40 +1,108 @@
-.menu-gorne{
-    height:50px;
+body{
+    background-color:#111;
+    font-family: 'Ubuntu', Tahoma, Arial, sans-serif;
 }
-.menu{
+.menu-gorne{
+    width:80%;
+    margin:auto;
+    height:50px;
+    color:#5E5E5E;
+}
+.menu-gorne .ostatni{
+    border-right: none;
+}
+.menu-gorne ul{
     list-style-type: none;
     float:right;
+    margin-top: 8px;
+    margin-right:50px;
 }
-
-.zakladki{
+.menu-gorne ul li{
     display: inline;
-    border-right: 1px solid black;
+    border-right: 1px solid #5E5E5E;
     padding-right: 5px;
+    font-size: 12px;
 }
-.ostatni{
-    border:none;
+.menu-gorne ul li a{
+    color:#5E5E5E;
+    text-decoration: none;
+}
+.menu-gorne ul li a:hover{
+    color:lightgray;
+    background-color: #333;
 }
 .baner{
     background-color: black;
     height:70px;
     width:100%;
     color:white;
-    font-size: 22px;
+    font-size: 18px;
     position: fixed;
     left:0;
     right:0;
     top:50px;
     transition-duration: 0.1s;
 }
-.karuzela img{
-    width:100%;
+.baner .do-wyrownania{
+    line-height: 20px;
+    height:100%;
+    width:80%;
+    margin:auto;
+}
+.baner .do-wyrownania img{
+    height:80%;
+    margin-top: 5px;
+    margin-left:120px;
+}
+.baner .do-wyrownania ul{
+    width:40%;
+    list-style-type: none;
+    float:right;
+    height:100%;
+    margin-top: 23px;
+}
+.baner .do-wyrownania ul li{
+    display: inline;
+    padding-right: 5px;
+}
+.baner .do-wyrownania ul li a{
+    color:white;
+    text-decoration: none;
+}
+.baner .do-wyrownania ul li a:hover{
+    color:orange;
 }
 .karuzela{
     width:100%;
     height:800px;
     text-align:center;
 }
-.karuzela h1{
-    padding-top:20%;
+.karuzela .naglowki{
+    width:55%;
+    margin:auto;
+}
+.karuzela .naglowki h1{
+    padding-top:30%;
     color:white;
+    font-size: 50px;
+    font-weight: 300;
+}
+.karuzela .naglowki h3{
+    color:white;
+    font-weight: 300;
+}
+.karuzela .naglowki a button{
+    background-color: rgb(230, 126, 0);
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    font-size: 16px;
+    transition-duration: 2s;
+}
+.karuzela .naglowki a button:hover{
+    background-color: #222;
+    color: rgb(230, 126, 0);
+}
+.karuzela .naglowki a button:visited{
+    border:none;
 }
