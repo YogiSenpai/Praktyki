@@ -52,10 +52,10 @@ body{
 .baner .do-wyrownania img{
     height:80%;
     margin-top: 5px;
-    margin-left:120px;
+    margin-left:80px;
 }
 .baner .do-wyrownania ul{
-    width:50%;
+    width:60%;
     list-style-type: none;
     float:right;
     height:100%;
@@ -76,6 +76,7 @@ body{
     width:100%;
     height:800px;
     text-align:center;
+    background-image: url("../obrazy/mapa.jpg");
 }
 .karuzela .naglowki{
     width:55%;
@@ -102,7 +103,75 @@ body{
 .karuzela .naglowki a button:hover{
     background-color: #222;
     color: rgb(230, 126, 0);
+    cursor:pointer;
 }
-.karuzela .naglowki a button:visited{
-    border:none;
+.menu-logo{
+    display:none;
 }
+.menu-rozwijane ul{
+    background-color:black;
+    z-index:2;
+    display:none;
+    position: fixed;
+    width:230px;
+    list-style-type: none;
+    top:54px;
+    right:0;
+    height:100%;
+}
+@media screen and (max-width:1000px){
+    .baner .do-wyrownania img{
+        margin-left:0px;
+    }
+    .karuzela{
+        height:620px;
+        width:100%;
+    }
+    .baner{
+        z-index:3;
+    }
+    .baner .do-wyrownania ul{
+        display: none;
+    }
+    #pierwszy-link{
+        margin-top: 35%;
+    }
+    .menu-rozwijane ul li{
+        margin-top:20px;
+        height:50px;
+        border-bottom:1px solid grey;
+        font-size: 24px;
+        text-align: center;
+        margin-right:0;
+        margin-left:-40px;
+    }
+    .menu-rozwijane ul li a{
+        color:white;
+        text-decoration: none;
+    }
+    .menu-rozwijane ul li a:hover{
+        color:orange;
+    }
+    .menu-logo{
+        display:inline;
+        height:100%;
+        float:right;
+    }
+}
+@media screen and (max-width:760px){
+    .menu-gorne{
+        display:none;
+    }
+    .baner{
+        top:0;
+    }
+    #pierwszy-link{
+        margin-top: 20%;
+    }
+    .karuzela .naglowki h1{
+        font-size: 40px;
+    }
+}
+    .menu-logo img:hover{
+        cursor:pointer;
+    }

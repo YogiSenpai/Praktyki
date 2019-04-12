@@ -1,71 +1,127 @@
 h1{text-align: center;}
-.container{
-    width:60%;
-    margin:auto;
+@media screen and (min-width:1020px){
+    .container{
+        width:60%;
+        margin:auto;
+    }
+    .flex-container{
+        height:200px;
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+    }
+    .element{
+        margin:5px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 140%;
+
+    }
+    .element:hover{
+        background-size: 160%;
+        position: relative;
+    }
+    .element1{
+        background-color: #006699;
+        width:40%;
+        height:100%;
+        vertical-align: bottom;
+        transition: all 2s ease-in-out;
+    }
+    .element1:hover{
+        background-image: url("../obrazy/obrazek1.jpg");
+        
+    }
+    .tekst1{
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    .element2{
+        background-color: #ffffff;
+        width:20%;
+        height:100%;
+        vertical-align: bottom;
+        transition: all 2s ease-in-out;
+    }
+    .element2:hover{
+        background-image:url("../obrazy/obrazek2.jpg");
+        
+    }
+    .tekst2{margin-left:20px;}
+    .do-dolu{margin-top:100px;}
+    .element3{
+        background-color: #dedede;
+        width:20%;
+        height:100%;
+        vertical-align: bottom;
+        transition: all 2s ease-in-out;
+    }
+    .element3:hover{
+        background-image:url("../obrazy/obrazek3.jpg");
+        
+    }
+    .element4{
+        background-color: #000111;
+        width:20%;
+        height:100%;
+        vertical-align: bottom;
+        transition: all 2s ease-in-out;
+    }
+    .element4:hover{
+        background-image:url("../obrazy/obrazek4.jpg");
+        
+    }
 }
-.flex-container{
-    height:200px;
-    display: flex;
-    align-items: stretch;
-    cursor: pointer;
-    overflow: hidden;
+
+@media screen and (max-width:1020px){
+    .container{
+        width:90%;
+        margin:auto;
+    }
+    .flex-container{
+        height:400px;
+        display: flex;
+        overflow: hidden;
+        margin:auto;
+        align-content: flex-start;
+        flex-flow: row wrap;
+    }
+    .element{
+        margin:auto;
+        width:20%;
+        height:40%;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .element1{
+        background-image:url("../obrazy/obrazek1.jpg");
+        position: relative;
+    }
+    .element2{
+        background-image:url("../obrazy/obrazek2.jpg");
+        position: relative;
+    }
+    .element3{
+        background-image:url("../obrazy/obrazek3.jpg");
+        position: relative;
+    }
+    .element4{
+        background-image:url("../obrazy/obrazek4.jpg");
+        position: relative;
+    }
+    h2,h4{
+        color:white;
+        text-align: center;
+    }
+    h3,h5{
+        display:none;
+    }
 }
-.element{margin:5px;}
-.element1{
-    background-color: #006699;
-    width:40%;
-    height:100%;
-    vertical-align: bottom;
-    background-size: 110%;
-    transition: all 2s ease-in-out;
-}
-.element1:hover{
-    background-image: url("../obrazy/obrazek1.jpg");
-    background-size: 120%;
-}
-.tekst1{
-    margin-top: 100px;
-    margin-left: 20px;
-}
-.element2{
-    background-color: #ffffff;
-    width:20%;
-    height:100%;
-    vertical-align: bottom;
-    background-size: 110%;
-    transition: all 2s ease-in-out;
-}
-.element2:hover{
-    background-image:url("../obrazy/obrazek2.jpg");
-    background-size: 120%;
-    position: relative;
-}
-.tekst2{margin-left:20px;}
-.do-dolu{margin-top:100px;}
-.element3{
-    background-color: #dedede;
-    width:20%;
-    height:100%;
-    vertical-align: bottom;
-    background-size: 110%;
-    transition: all 2s ease-in-out;
-}
-.element3:hover{
-    background-image:url("../obrazy/obrazek3.jpg");
-    background-size: 120%;
-    position: relative;
-}
-.element4{
-    background-color: #000111;
-    width:20%;
-    height:100%;
-    vertical-align: bottom;
-    background-size: 110%;
-    transition: all 2s ease-in-out;
-}
-.element4:hover{
-    background-image:url("../obrazy/obrazek4.jpg");
-    background-size: 120%;
-    position: relative;
+@media screen and (max-width:720px){
+    .element{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
 }
 .bialy{color:white;}

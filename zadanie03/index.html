@@ -1,8 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html lang="pl-PL">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <title>Zadanie 3.</title>
 
@@ -13,23 +14,64 @@
         <script type="text/javascript">
 			$(document).ready(function()
 				{
-				// tu pisz swoje skrypty -----------
-            $(window).scroll(function (event) {
-                var scroll = $(window).scrollTop();
-                if(scroll>20){
-                    $(".baner").css({"top": "0","height": "40px"});
-                    $(".do-wyrownania").css({"line-height":"0"});
-                }
-                if(scroll<20){
-                    $(".baner").css({"top": "50px","height": "70px"});
-                    $(".do-wyrownania").css({"line-height":"20px"});
-                }
+                    var width = $(window).width();
+
+                    var scroll = $(window).scrollTop();
+
+                $(window).scroll(function (event) {
+                    scroll = $(window).scrollTop();
+                    console.log("width:",width);
+                            console.log("scroll: ",scroll);
+                        if(scroll>30 && width<983){
+                            $(".baner").css({"top": "0","height": "70px"});
+                            $(".do-wyrownania").css({"line-height":"0"});
+                        }
+                        else if(scroll>30 && width>982){
+                            $(".baner").css({"top": "0","height": "40px"});
+                            $(".do-wyrownania").css({"line-height":"0"});
+                        }
+                        else if(scroll<=30 && width<743){
+                            $(".baner").css({"top": "0","height": "70px"});
+                                $(".do-wyrownania").css({"line-height":"0"});
+                        }
+                        else if(scroll<=30 && width>742){
+                            $(".baner").css({"top": "50px","height": "70px"});
+                            $(".do-wyrownania").css({"line-height":"20px"});
+                        }
+                });
+
+                $(window).resize(function(){
+                        if($(this).width() != width){
+                            width = $(this).width();
+                            console.log("width:",width);
+                            console.log("scroll: ",scroll);
+                            if(width<743){
+                                $(".baner").css({"top": "0","height": "70px"});
+                                $(".do-wyrownania").css({"line-height":"0"});
+                            }
+                                else if(width>742 && width<983 && scroll>30){
+                                    $(".baner").css({"top": "0","height": "70px"});
+                                    $(".do-wyrownania").css({"line-height":"0"});
+                                }
+                                else if(width>742 && width<983 && scroll<=30){
+                                    $(".baner").css({"top": "50px","height": "70px"});
+                                    $(".do-wyrownania").css({"line-height":"20px"});
+                                }
+                                else if(width>982 && scroll>30){
+                                    $(".baner").css({"top": "0","height": "40px"});
+                                    $(".do-wyrownania").css({"line-height":"0"});
+                                }
+                                else if(width>999 && scroll<=30){
+                                    $(".baner").css({"top": "50px","height": "70px"});
+                                    $(".do-wyrownania").css({"line-height":"20px"});
+                                }
+                            }
+                    }
+                    );
+            $('.menu-logo').click(function(){
+                $('.menu-rozwijane ul').stop().slideToggle(200);
             });
-            $('.karuzela').css("background-image", 'url("obrazy/mapa.jpg")');
-            //url("obrazy/podroznik.jpg")
-				// ---------------------------------
-				}
-			)
+			})
 	    </script>
     </head>
     <body>
@@ -39,6 +81,15 @@
             <img src="" alt="">
             <img src="" alt="">
             -->
+            <div class="menu-rozwijane">
+                <ul>
+                    <li id="pierwszy-link"><a href="#">Oferta</a></li>
+                    <li><a href="#">Nasz zespół</a></li>
+                    <li><a href="#">Wiadomości</a></li>
+                    <li><a href="#">Realizacje</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
         <div class="menu-gorne">
             <ul>
                 <li><a href="#">Projekt</a></li>
@@ -49,26 +100,28 @@
                 <li class="ostatni"><a href="#">Zmień język</a></li>
             </ul>
         </div>
-        <div class="baner">    
+        <div class="baner">
             <div class="do-wyrownania">
                 <a href="#"><img src="obrazy/logo.png" alt="logo"></a>
-                <ul>
-                    <li><a href="#">Oferta</a></li>
-                    <li><a href="#">Nasz zespół</a></li>
-                    <li><a href="#">Wiadomości</a></li>
-                    <li><a href="#">Realizacje</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="#">Oferta</a></li>
+                        <li><a href="#">Nasz zespół</a></li>
+                        <li><a href="#">Wiadomości</a></li>
+                        <li><a href="#">Realizacje</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                <div class="menu-logo">
+                    <img src="obrazy/menu.png">
+                </div>
             </div>
         </div>
         <div class="karuzela">
             <div class="naglowki">
-                <!--<marquee scrollAmount=1 direction=up style="text-align:justify">-->
                     <h1>Kampanie Public Relationship</h1>
                     <h3>Nasze działania odznaczają się przede wszystkim determinacją w dążeniu do celu. Prowadzimy relacje z mediami, uznawane przez naszych klientów za skuteczne. Opracowujemy plany antykryzysowe, planujemy kampanie wewnętrzne.</h3>
                     <a href="#"><button>Dowiedz się więcej</button></a>
-                <!--</marquee>-->
             </div>
         </div>
+        
     </body>
 </html>
