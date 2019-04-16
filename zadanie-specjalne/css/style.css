@@ -1,14 +1,6 @@
 body{
     font-family: 'Nunito', sans-serif;
-}
-div:hover .cien{
-    z-index: 2;
-}
-.obraz{
-    z-index: 1;
-}
-.cien{
-    z-index: 0;
+    background-image: url("../grafika/tlo.png");
 }
 .baner{
     position:absolute;
@@ -80,7 +72,7 @@ div:hover .cien{
 }
 .menu ul{
     list-style-type: none;
-    margin-top:160px;
+    margin-top:80%;
     font-size:1.2em;
 }
 .menu li{
@@ -89,6 +81,12 @@ div:hover .cien{
 .menu ul li a{
     text-decoration: none;
     color: #013C5E;
+}
+#strzalka-menu{
+    position:absolute;
+    margin-left:82%;
+    top:50%;
+    cursor:pointer;
 }
 .menu img{
     display:block;
@@ -101,14 +99,32 @@ div:hover .cien{
     width:100px;
     margin-right:80px;
 }
-.karuzela .full{
+.do-rozwiniecia{
+    position:fixed;
+    height: 100%;
+    width: 30px;
+    left:0;
+    top:0;
+    padding-top:32%;
+    background-color:white;
+}
+#strzalka-zwrotna-menu{
+    display:none;
     position:absolute;
+    top:32%;
+    cursor:pointer;
+    transform:rotate(180deg);
+    left:0;
+}
+.karuzela .full{
+    position: absolute;
     width:100%;
-    height:100%;
+    height:978px;
     left:0;
     right:0;
     top:0;
     z-index:-1;
+    max-height: none;
     transition-duration: 0.5s;
     transition-property: opacity;
 }
@@ -123,4 +139,85 @@ div:hover .cien{
 }
 #czwarty{
     opacity:0;
+}
+.karuzela form{
+    margin-left:30%;
+    margin-top:850px;
+}
+.przyciski{
+    margin-bottom:20px;
+    margin-left:40%;
+}
+.biale-tlo{
+    background-color:white;
+    display: inline;
+    padding-top:21px;
+    padding-bottom:24px;
+    padding-left:67px;
+}
+.karuzela form img{
+    position:absolute;
+    padding-left:5px;
+    padding-top:7px;
+}
+.karuzela button{
+    width:40px;
+    height:20px;
+    border:none;
+    background-color: white;
+}
+#zapisz-sie{
+    padding:22px 30px 23px 30px;
+    border:none;
+    background-color:white;
+    margin-left:10px;
+}
+#pierwszy-przycisk{
+    background-color:#013C5E;
+}
+.siatka{
+    margin-top:40px;
+}
+.container{
+    width:1000px;
+    margin:auto;
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.kafelek{
+    width:33%;
+    display: inline-block;
+}
+.obraz{
+    opacity: 1;
+    margin-bottom:10px;
+}
+.cien{
+    opacity:0;
+    position: absolute;
+}
+.kafelek:hover .cien{
+    opacity: 1;
+}
+.naglowek{
+    border-bottom:2px dotted white;
+    color:white;
+    text-align: center;
+    margin:auto;
+    margin-top:100px;
+    padding-right:40%;
+    padding-left:40%;
+    padding-bottom: 40px;
+}
+.naglowek img, .naglowek h1{
+    display: inline-block;
+}
+.naglowek h1{
+    font-weight: 100;
+}
+.naglowek img{
+    width: 30%;
+    margin-right: 20px;
+    margin-bottom:-8px;
 }
