@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
         drugiPrzycisk.style.backgroundColor = "#013C5E";
         trzeciPrzycisk.style.backgroundColor = "white";
         czwartyPrzycisk.style.backgroundColor = "white";
-        numer=1;
+        numer=2;
     });
 
     $("#trzeci-przycisk").click(function(){
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
         drugiPrzycisk.style.backgroundColor = "white";
         trzeciPrzycisk.style.backgroundColor = "#013C5E";
         czwartyPrzycisk.style.backgroundColor = "white";
-        numer=1;
+        numer=3;
     });
 
     $("#czwarty-przycisk").click(function(){
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
         drugiPrzycisk.style.backgroundColor = "white";
         trzeciPrzycisk.style.backgroundColor = "white";
         czwartyPrzycisk.style.backgroundColor = "#013C5E";
-        numer=1;
+        numer=4;
     });
 
     const time = setInterval(function() {

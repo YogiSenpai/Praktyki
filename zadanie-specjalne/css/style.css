@@ -2,6 +2,9 @@ body{
     font-family: 'Nunito', sans-serif;
     background-image: url("../grafika/tlo.png");
 }
+.plansza{
+    height:979px;
+}
 .baner{
     position:absolute;
     width:100%;
@@ -73,7 +76,7 @@ body{
 .menu ul{
     list-style-type: none;
     margin-top:80%;
-    font-size:1.2em;
+    font-size:1.3em;
 }
 .menu li{
     margin-bottom:8px;
@@ -140,9 +143,12 @@ body{
 #czwarty{
     opacity:0;
 }
-.karuzela form{
+.karuzela .formularz{
     margin-left:30%;
     margin-top:850px;
+}
+.karuzela .formularz .biale-tlo input{
+    width:300px;
 }
 .przyciski{
     margin-bottom:20px;
@@ -155,7 +161,7 @@ body{
     padding-bottom:24px;
     padding-left:67px;
 }
-.karuzela form img{
+.karuzela .formularz img{
     position:absolute;
     padding-left:5px;
     padding-top:7px;
@@ -176,22 +182,25 @@ body{
     background-color:#013C5E;
 }
 .siatka{
-    margin-top:40px;
+    margin-top:50px;
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .container{
     width:1000px;
     margin:auto;
-    display:flex;
-    flex-flow: row;
-    flex-wrap: wrap;
 }
 .kafelek{
-    width:33%;
+    width:32%;
     display: inline-block;
+    margin:5px;
 }
 .obraz{
     opacity: 1;
     margin-bottom:10px;
+    margin-left:1px;
 }
 .cien{
     opacity:0;
@@ -200,24 +209,119 @@ body{
 .kafelek:hover .cien{
     opacity: 1;
 }
+.kafelek p:hover .cien{
+    opacity: 1;
+}
+.kafelek p{
+    position:absolute;
+    color:white;
+    margin-top:70px;
+    font-weight: 600;
+    z-index: 3;
+}
 .naglowek{
     border-bottom:2px dotted white;
     color:white;
     text-align: center;
     margin:auto;
-    margin-top:100px;
+    padding-top:80px;
     padding-right:40%;
     padding-left:40%;
     padding-bottom: 40px;
+    margin-right:10px;
 }
 .naglowek img, .naglowek h1{
     display: inline-block;
 }
 .naglowek h1{
     font-weight: 100;
+    font-size: 1.6em;
 }
 .naglowek img{
     width: 30%;
     margin-right: 20px;
     margin-bottom:-8px;
+}
+.teksty{
+    width:30%;
+    color:white;
+}
+.produkty{
+    background-color:white;
+    width:100%;
+    height:978px;
+    margin-top:25px;
+    margin-right:-8px;
+    overflow:hidden;
+}
+.naglowek-produkty{
+    color:white;
+    text-align: center;
+    margin:auto;
+    padding-top:40px;
+    padding-right:40%;
+    padding-left:40%;
+    margin-right:10px;
+}
+.naglowek-produkty hr{
+    margin-top:40px;
+    border-top:2px dotted #013C5E;
+    width: 1000px;
+    margin-left: -300px;
+    margin-bottom: 40px;
+}
+.naglowek-produkty h1{
+    color:#013C5E;
+    font-weight: 100;
+    font-size: 1.6em;
+}
+.naglowek-produkty img{
+    width: 18%;
+    margin-right: 20px;
+    margin-bottom:-12px;
+}
+.naglowek-produkty img, .naglowek-produkty h1{
+    display: inline-block;
+}
+.teksty-produkty{
+    display: flex;
+    flex-flow: row;
+    margin:auto;
+    justify-content: space-around;
+    width:1000px;
+    font-size:1.2em;
+    word-spacing: 15px;
+}
+.teksty-produkty div{
+    width:48%;
+}
+.pojedyncze-kolko{
+    width:16%;
+    color: white;
+    margin:20px;
+}
+.pojedyncze-kolko p{
+    text-align: center;
+    font-size: 1.3em;
+    margin-top:58px;
+}
+.nazwa-w-kolku{
+    width:157px;
+    margin-left:3px;
+    position: absolute;
+}
+.kolka{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width:1000px;
+    margin:auto;
+    margin-top:80px;
+}
+.kolka img{
+    border-radius: 50%;
+    width: 163px;
+    height: 163px;
+    background-color: rgb(0, 136, 214);
+    background-size: cover;
 }
