@@ -40,6 +40,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const trzeci = document.getElementById("trzeci");
     const czwarty = document.getElementById("czwarty");
 
+    const pierwszyTekst = document.getElementById("pierwszy-tekst");
+    const drugiTekst = document.getElementById("drugi-tekst");
+    const trzeciTekst = document.getElementById("trzeci-tekst");
+    const czwartyTekst = document.getElementById("czwarty-tekst");
+
     const pierwszyPrzycisk = document.getElementById("pierwszy-przycisk");
     const drugiPrzycisk = document.getElementById("drugi-przycisk");
     const trzeciPrzycisk = document.getElementById("trzeci-przycisk");
@@ -52,6 +57,10 @@ document.addEventListener("DOMContentLoaded", function() {
         drugi.style.opacity = "0";
         trzeci.style.opacity = "0";
         czwarty.style.opacity = "0";
+        pierwszyTekst.style.opacity = "1";
+        drugiTekst.style.opacity = "0";
+        trzeciTekst.style.opacity = "0";
+        czwartyTekst.style.opacity = "0";
         pierwszyPrzycisk.style.backgroundColor = "#013C5E";
         drugiPrzycisk.style.backgroundColor = "white";
         trzeciPrzycisk.style.backgroundColor = "white";
@@ -64,6 +73,10 @@ document.addEventListener("DOMContentLoaded", function() {
         drugi.style.opacity = "1";
         trzeci.style.opacity = "0";
         czwarty.style.opacity = "0";
+        pierwszyTekst.style.opacity = "0";
+        drugiTekst.style.opacity = "1";
+        trzeciTekst.style.opacity = "0";
+        czwartyTekst.style.opacity = "0";
         pierwszyPrzycisk.style.backgroundColor = "white";
         drugiPrzycisk.style.backgroundColor = "#013C5E";
         trzeciPrzycisk.style.backgroundColor = "white";
@@ -76,6 +89,10 @@ document.addEventListener("DOMContentLoaded", function() {
         drugi.style.opacity = "0";
         trzeci.style.opacity = "1";
         czwarty.style.opacity = "0";
+        pierwszyTekst.style.opacity = "0";
+        drugiTekst.style.opacity = "0";
+        trzeciTekst.style.opacity = "1";
+        czwartyTekst.style.opacity = "0";
         pierwszyPrzycisk.style.backgroundColor = "white";
         drugiPrzycisk.style.backgroundColor = "white";
         trzeciPrzycisk.style.backgroundColor = "#013C5E";
@@ -88,6 +105,10 @@ document.addEventListener("DOMContentLoaded", function() {
         drugi.style.opacity = "0";
         trzeci.style.opacity = "0";
         czwarty.style.opacity = "1";
+        pierwszyTekst.style.opacity = "0";
+        drugiTekst.style.opacity = "0";
+        trzeciTekst.style.opacity = "0";
+        czwartyTekst.style.opacity = "1";
         pierwszyPrzycisk.style.backgroundColor = "white";
         drugiPrzycisk.style.backgroundColor = "white";
         trzeciPrzycisk.style.backgroundColor = "white";
@@ -99,6 +120,8 @@ document.addEventListener("DOMContentLoaded", function() {
         if(numer===4){
             czwarty.style.opacity = "0";
             pierwszy.style.opacity = "1";
+            czwartyTekst.style.opacity = "0";
+            pierwszyTekst.style.opacity = "1";
             czwartyPrzycisk.style.backgroundColor = "white";
             pierwszyPrzycisk.style.backgroundColor = "#013C5E";
             numer=1;
@@ -106,6 +129,8 @@ document.addEventListener("DOMContentLoaded", function() {
         else if(numer===1){
             pierwszy.style.opacity = "0";
             drugi.style.opacity = "1";
+            pierwszyTekst.style.opacity = "0";
+            drugiTekst.style.opacity = "1";
             pierwszyPrzycisk.style.backgroundColor = "white";
             drugiPrzycisk.style.backgroundColor = "#013C5E"
             numer=2;
@@ -113,6 +138,8 @@ document.addEventListener("DOMContentLoaded", function() {
         else if(numer===2){
             drugi.style.opacity = "0";
             trzeci.style.opacity = "1";
+            drugiTekst.style.opacity = "0";
+            trzeciTekst.style.opacity = "1";
             drugiPrzycisk.style.backgroundColor = "white";
             trzeciPrzycisk.style.backgroundColor = "#013C5E"
             numer=3;
@@ -120,6 +147,8 @@ document.addEventListener("DOMContentLoaded", function() {
         else if(numer===3){
             trzeci.style.opacity = "0";
             czwarty.style.opacity = "1";
+            trzeciTekst.style.opacity = "0";
+            czwartyTekst.style.opacity = "1";
             trzeciPrzycisk.style.backgroundColor = "white";
             czwartyPrzycisk.style.backgroundColor = "#013C5E"
             numer=4;
