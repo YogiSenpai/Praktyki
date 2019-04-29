@@ -2,6 +2,7 @@
 body{
     font-family: 'Nunito', sans-serif;
     background-image: url("../grafika/tlo.png");
+    background-attachment: fixed;
     margin:0;
 }
 .srodkowanie{
@@ -13,8 +14,7 @@ p{
 }
 .plansza{
     position: relative;
-    height:979px;
-    margin-top:-18px;
+    margin:0;
 }
 .biale-tlo{background-color:white;}
 .naglowek-bialy{
@@ -27,30 +27,33 @@ p{
 .naglowek-bialy h1{
     font-weight: 100;
     font-size: 1.6em;
-    padding-top: 20px;
+    font-weight:100;
+    padding-top: 24px;
 }
 .naglowek-bialy img{
-    margin-right: 20px;
-    margin-bottom:-8px;
+    margin-right: 9px;
+    margin-left: 4px;
     float:left;
 }
 .naglowek{
     color:#013C5E;
     text-align: center;
     width:220px;
-    margin-bottom: 63px;
+    padding-bottom: 42px;
     margin:auto;
 }
 .naglowek h1{
     color:#013C5E;
     font-weight: 100;
     font-size: 1.6em;
-    padding-top: 20px;
+    padding-top: 50px;
+    letter-spacing:0.3px;
 }
 .naglowek img{
-    margin-right: 20px;
-    margin-bottom:-12px;
-    float:left;
+    margin-left: -2px;
+    margin-right: 13px;
+    float: left;
+    margin-top: 39px;
 }
 
 /* MENU */
@@ -132,7 +135,7 @@ p{
     display:inline;
     position: absolute;
     top:0;
-    margin-top:40px;
+    margin-top:42px;
 }
 .baner ul li{
     display: inline;
@@ -162,8 +165,8 @@ p{
 #ikona-lupa{
     position: absolute;
     right: 0;
-    margin-right:20px;
-    margin-top:28px;
+    margin-right:22px;
+    margin-top:37px;
 }
 #ikona-lupa:hover{
     cursor: pointer;
@@ -174,7 +177,7 @@ p{
 .karuzela .full{
     position: absolute;
     width:100%;
-    height:978px;
+    height:979px;
     left:0;
     right:0;
     top:0;
@@ -197,11 +200,11 @@ p{
 }
 .tekst-na-grafice{
     position:absolute;
-    bottom:346px;
+    bottom:344px;
     width:1000px;
     margin:auto;
     left:50%;
-    margin-left:-500px;
+    margin-left:-495px;
     font-size: 1.5em;
     color:white;
     text-shadow: 2px 2px 10px black;
@@ -227,21 +230,22 @@ p{
 .tytul{
     float:right;
 }
-.tytul h1{
+.pierwsza-linijka{
     line-height:62px;
 }
-.tytul h2{
+.druga-linijka{
     line-height: 0px;
 }
-.tytul h1, .tytul h2{
-    letter-spacing: 3px;
+.pierwsza-linijka, .druga-linijka{
+    letter-spacing: 1.4px;
 }
 .tytul h4{
-    letter-spacing: 1px;
+    letter-spacing: 0.7px;
     float:right;
+    margin-right:6px;
     line-height: 0px;
 }
-.tytul h1, .tytul h2, .tytul h4{
+.pierwsza-linijka, .druga-linijka, .tytul h4{
     font-weight:100;
 }
 .dolna-sekcja{
@@ -254,11 +258,12 @@ p{
 }
 .przyciski{
     float:right;
-    margin-bottom:15px;
+    margin-bottom:13px;
+    margin-right: 3px;
 }
 .przyciski button{
-    width:38px;
-    height:16px;
+    width:37px;
+    height:14px;
     background-color:white;
     border:none;
     margin-left:6px;
@@ -284,45 +289,57 @@ p{
     color: #013C5E;
 }
 .chcesz-newsletter img{
-    margin-left:-6px;
+    margin-left:1px;
     margin-top:-3px;
 }
 .chcesz-newsletter input{
     height:25px;
-    width:371px;
+    width:367px;
     font-size: 1.2em;
     vertical-align: middle;
 }
 .chcesz-newsletter label{
-    margin-left: -10px;
-    margin-top: 3px;
+    margin-left: 4px;
+    margin-top: 6px;
+    letter-spacing: 0.6px;
 }
 #zapisz-sie{
     border:none;
     background-color:white;
     margin-left:10px;
-    width:133px;
+    width:131px;
+    margin-right: 4px;
+    font-size: 1.2em;
+    padding-right: 8px;
+    padding-top: 5px;
+    color:#013C5E;
+    cursor: pointer;
 }
 
 /* BRANŻE */
 
+.branze{
+    padding-top: 31px;
+}
 .branze hr{
     border-style:dotted;
     border-color: white;
     border-width: 0 0 2px 0;
 }
 .siatka{
-    margin-top:45px;
+    margin-top:50px;
+    margin-left: 2px;
     display:flex;
     flex-flow: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .kafelek{
-    width:314px;
+    width:315px;
     height:150px;
     display: inline-block;
-    margin:10px 0;
+    margin-bottom: 22px;
+    margin-right: 2px;
 }
 .kafelek:hover .cien{
     opacity: 0;
@@ -333,9 +350,10 @@ p{
 .kafelek p{
     position:absolute;
     color:white;
-    margin-top:70px;
-    font-weight: 600;
+    margin-top:67px;
     z-index: 3;
+    font-size:1.2em;
+    letter-spacing: 1px;
 }
 .cien{
     opacity:1;
@@ -344,11 +362,15 @@ p{
 .obraz{
     opacity: 1;
     margin-bottom:10px;
-    margin-left:2px;
+    margin-left:1px;
 }
 .teksty{
-    width:30%;
+    width:317px;
     color:white;
+    margin-top:-19px;
+    margin-left:-3px;
+    line-height:20px;
+    letter-spacing: 0.2px;
 }
 
 /* PRODUKTY */
@@ -366,27 +388,43 @@ p{
     width:1000px;
     font-size:1.2em;
     word-spacing: 15px;
+    margin-top:40px;
+    color:#013C5E;
+    margin-left:10px;
+}
+.tekst-z-lewej{
+    margin-left:-20px;
+}
+.tekst-z-prawej{
+    margin-left:8px;
 }
 .teksty-produkty div{
-    width:48%;
+    word-spacing: 1.1px;
+    width: 484px;
+    letter-spacing: 1.2px;
+    line-height: 26px;
 }
 
 /* USŁUGI */
 
+.uslugi{
+    margin-top:45px;
+}
 .uslugi hr{
     border-style:dotted;
     border-color: white;
     border-width: 0 0 2px 0;
 }
 .pojedyncze-kolko{
-    width:16%;
+    width:168px;
+    margin-top: 34px;
     color: white;
-    margin:20px;
 }
 .pojedyncze-kolko p{
     text-align: center;
     font-size: 1.3em;
-    margin-top:58px;
+    margin-top: 56px;
+    line-height: 26px;
 }
 .nazwa-w-kolku{
     width:157px;
@@ -396,10 +434,9 @@ p{
 .kolka{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width:1000px;
-    margin:auto;
-    margin-top:80px;
+    margin-top: 57px;
 }
 .kolka img{
     border-radius: 50%;
@@ -412,14 +449,15 @@ p{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    margin-bottom: 20px;
 }
 .kolumna{
     display:flex;
     flex-flow: column;
     justify-content: space-around;
-    width:30%;
     height:400px;
+    width: 330px;
+    margin-top: 18px;
+    margin-left: 58px;
 }
 .kolumna-srodkowa{
     display:flex;
@@ -434,10 +472,14 @@ p{
     text-align:center;
 }
 .kolumna img{
-    margin-left:100px;
+    margin-left:108px;
+    margin-top:9px;
 }
 .bialy-tekst{
     color:white;
+}
+.teksciki{
+    letter-spacing: 0.5px;
 }
 
 /* AKTUALNOŚCI */

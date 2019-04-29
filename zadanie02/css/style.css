@@ -41,7 +41,7 @@ h1{text-align: center;}
         width:20%;
         height:100%;
         vertical-align: bottom;
-        transition: all 2s ease-in-out;
+        transition: background-image 2s ease-in-out;
     }
     .element2:hover{
         background-image:url("../obrazy/obrazek2.jpg");
@@ -54,7 +54,7 @@ h1{text-align: center;}
         width:20%;
         height:100%;
         vertical-align: bottom;
-        transition: all 2s ease-in-out;
+        transition: background-image 2s ease-in-out;
     }
     .element3:hover{
         background-image:url("../obrazy/obrazek3.jpg");
