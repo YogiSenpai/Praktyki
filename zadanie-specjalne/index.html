@@ -12,6 +12,7 @@
     <script src="../jq/jquery-3.4.0.min.js" defer></script>
     <script src="js/script.js" defer></script>
 
+
 </head>
 <body>
     <!--
@@ -314,10 +315,10 @@
         <div class="aktualnosci">
             <div class="srodkowanie">
                 <div class="naglowek"  style="width:300px">
-                    <img src="grafika/icon-aktualnosci.png">
-                    <h1>AKTUALNOŚCI</h1>
+                    <img style="margin-left: 1px;margin-top: 42px;" src="grafika/icon-aktualnosci.png">
+                    <h1 style="font-size: 1.75em;padding-top: 67px;margin-right: -2px;">AKTUALNOŚCI</h1>
                 </div>
-                <hr>
+                <hr style="margin-top:2px;">
                 <div class="mini-karuzela">
                     <img id="strzalka-w-lewo" class="strzalki" src="grafika/strzalka-w-lewo.png">
                     <div class="opcja">
@@ -328,27 +329,86 @@
                         <a href="#" class="wiecej">więcej</a>
                     </div>
                     <div class="opcja">
+                        <img src="grafika/aktualnosci4.png">
+                        <h3>1.06.2013</h3>
+                        <h2 style="margin-left:2px;">LOREM IPSUM</h2>
+                        <p style="margin-left:2px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
+                        <a style="margin-left:2px;" href="#" class="wiecej">więcej</a>
+                    </div>
+                    <div class="opcja">
+                        <img style="margin-left:2px;" src="grafika/aktualnosci3.png">
+                        <h3>1.06.2013</h3>
+                        <h2 style="margin-left:3px;">LOREM IPSUM</h2>
+                        <p style="margin-left:3px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
+                        <a style="margin-left:3px;" href="#" class="wiecej">więcej</a>
+                    </div>
+                    <div class="opcja">
                         <img src="grafika/aktualnosci2.png">
                         <h3>1.06.2013</h3>
                         <h2>LOREM IPSUM</h2>
                         <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
                         <a href="#" class="wiecej">więcej</a>
                     </div>
-                    <div class="opcja">
-                        <img src="grafika/aktualnosci3.png">
-                        <h3>1.06.2013</h3>
-                        <h2>LOREM IPSUM</h2>
-                        <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
-                        <a href="#" class="wiecej">więcej</a>
+                <img id="strzalka-w-prawo" class="strzalki" src="grafika/strzalka-w-prawo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kontakt" class="plansza" style="height:900px;">
+        <div class="kontakt">
+            <div style="width:836px;" class="srodkowanie">
+                <div style="margin-top:45px;padding-right:27px;" class="naglowek-bialy">
+                    <img style="margin-left: 12px;" src="grafika/icon-user.png">
+                    <h1 style="letter-spacing: 3px;padding-top: 26px;margin-right: -27px;">KONTAKT</h1>
+                </div>
+                <hr>
+                <div class="adresy">
+                    <div style="margin-left:-4px;" class="dane-kontaktowe">
+                        <p style="margin-bottom:37px;">SIMPLE S.A.</p>
+                        <p>ul. Bronisława Czecha 49/51</p>
+                        <p style="margin-bottom:38px;">04-555 Warszawa</p>
+                        <p>tel.: (22) 812-58-98</p>
+                        <p style="margin-bottom:38px;">fax.: (22) 815-49-83</p>
+                        <p>simple@simple.com.pl</p>
                     </div>
-                    <div class="opcja">
-                        <img src="grafika/aktualnosci4.png">
-                        <h3>1.06.2013</h3>
-                        <h2>LOREM IPSUM</h2>
-                        <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
-                        <a href="#" class="wiecej">więcej</a>
+                    <div style="margin-left:-10px;" class="dane-kontaktowe">
+                        <p>SIMPLE S.A. - Ośrodek Badawczo</p>
+                        <p style="margin-bottom:37px;">-Rozwojowy Lublin</p>
+                        <p>ul. Wolska 11A/4</p>
+                        <p style="margin-bottom:38px;">20-411 Lublin</p>
+                        <p style="margin-bottom:38px;">tel. kom: _48 696 001 286</p>
+                        <p>lublin@simple.com.pl</p>
                     </div>
-                    <img id="strzalka-w-prawo" class="strzalki" src="grafika/strzalka-w-prawo.png">
+                    <div style="margin-right: -31px;" class="dane-kontaktowe">
+                        <p style="margin-bottom:37px;">SIMPLE S.A. - oddział Rzeszów</p>
+                        <p>ul. Rejtana 53A</p>
+                        <p style="margin-bottom:38px;">35-326 Rzeszów</p>
+                        <p>tel, kom.: +48 696 001 235</p>
+                        <p style="margin-bottom:38px;">fax.: (17) 865 42 41</p>
+                        <p>rzeszow@simple.com.pl</p>
+                    </div>
+                </div>
+                <hr style="padding-top:0;">
+                <div class="druga-czesc">
+                    <div class="formularz">
+                        <form>
+                            <h2>ZADAJ PYTANIE</h2>
+                            <input type="text" name="imie" id="imie" placeholder="Imię&Nazwisko">
+                            <input type="text" name="email" id="email" placeholder="Email">
+                            <input type="text" name="numer" id="numer" placeholder="Numer Telefonu">
+                            <input type="text" name="temat" id="temat" placeholder="Temat">
+                            <textarea placeholder="Treść zapytania"></textarea>
+                            <label>Wybierz rodzaj prezentacji</label>
+                            <label class="wybor">
+                                <input type="checkbox" name="prezentacja" id="siedziba">W siedzibie
+                            </label>
+                            <label class="wybor">
+                                <input type="checkbox" name="prezentacja" id="mutimedialna">Multimedialna
+                            </label>
+                            <input type="submit" id="wyslij" value="Wyślij">
+                        </textarea>
+                    </div>
                 </div>
             </div>
         </div>

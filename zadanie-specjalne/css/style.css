@@ -497,22 +497,37 @@ p{
     margin-top:140px;
     align-items: center;
     justify-content: stretch;
+    font-size: 0.8em;
+}
+.mini-karuzela h3{
+    font-size: 1em;
+    margin-top:32px;
+}
+.mini-karuzela h2{
+    font-size: 1em;
+    font-weight: 100;
+}
+.mini-karuzela p{
+    margin-top:-5px;
+    margin-bottom:34px
 }
 .strzalki{
     height: 42px;
 }
 #strzalka-w-lewo{
     margin-right:30px;
+    margin-top: 14px;
 }
 #strzalka-w-prawo{
-    margin-left:20px;
+    margin-left: 54px;
+    margin-top: 14px;
 }
 .strzalki:hover{
     cursor:pointer;
 }
 .opcja{
-    margin-left:20px;
-    margin-right:20px;
+    margin-top: -7px;
+    margin-left: 23px;
     color:#013C5E;
 }
 .opcja p{
@@ -522,6 +537,70 @@ p{
     text-decoration: none;
     color:#013C5E;
     border-top:2px dotted grey;
-    padding-top:5px;
-    margin-top:5px;
+    padding-top:12px;
+}
+
+/* KONTAKT */
+
+.kontakt hr{
+    border-style: dotted;
+    border-color: white;
+    border-width: 0 0 2px 0;
+    padding-top: 5px;
+}
+.adresy{
+    width:100%;
+    display: flex;
+    margin: 37px auto;
+    justify-content: space-between;
+}
+.dane-kontaktowe{
+    color:white;
+    width:255px;
+}
+.dane-kontaktowe p{
+    line-height:3px;
+}
+.formularz{
+    color:white;
+    width:407px;
+    margin-top:43px;
+    margin-left: 4px;
+}
+.formularz h2{
+    font-weight: 100;
+    margin-right: -5px;
+    font-size: 1em;
+}
+.formularz input, .formularz textarea, .formularz label, .formularz h2{
+    display:block;
+    font-family: 'Nunito', sans-serif;
+    height: 26px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+.formularz input[type=text]{
+    width:407px;
+}
+.formularz textarea{
+    width: 405px;
+    height: 79px;
+}
+.formularz label{
+    width:260px;
+    text-align:left;
+}
+.formularz input[type=checkbox]{
+    width: 22px;
+}
+.formularz .wybor{
+    display:inline;
+}
+.formularz input[type=submit]{
+    width:120px;
+    height:50px;
+    text-align: center;
+}
+.formularz input[type=checkbox], .formularz input[type=submit]{
+    display:inline;
 }
