@@ -2,6 +2,8 @@
 body{
     font-family: 'Nunito', sans-serif;
     background-image: url("../grafika/tlo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     margin:0;
 }
@@ -226,6 +228,9 @@ p{
 .tekst-na-grafice a{
     color:white;
     text-decoration: none;
+}
+.tekst-na-grafice a:hover{
+    text-decoration: underline;
 }
 .tytul{
     float:right;
@@ -490,14 +495,15 @@ p{
     border-width: 0 0 2px 0;
 }
 .mini-karuzela{
-    width:1000px;
-    display:flex;
+    width:867px;
+    display:inline-flex;
     flex-flow: row;
     margin:auto;
-    margin-top:140px;
+    margin-top: -216px;
     align-items: center;
     justify-content: stretch;
     font-size: 0.8em;
+    margin-left:68px;
 }
 .mini-karuzela h3{
     font-size: 1em;
@@ -513,21 +519,23 @@ p{
 }
 .strzalki{
     height: 42px;
+    display: inline-block;
 }
 #strzalka-w-lewo{
     margin-right:30px;
-    margin-top: 14px;
+    margin-top: 297px;
 }
 #strzalka-w-prawo{
-    margin-left: 54px;
-    margin-top: 14px;
+    margin-right: 5px;
+    margin-top: -194px;
+    float:right;
 }
 .strzalki:hover{
     cursor:pointer;
 }
 .opcja{
-    margin-top: -7px;
-    margin-left: 23px;
+    width:245px;
+    margin-left: 10px;
     color:#013C5E;
 }
 .opcja p{
@@ -538,6 +546,9 @@ p{
     color:#013C5E;
     border-top:2px dotted grey;
     padding-top:12px;
+}
+.opcja a:hover{
+    text-decoration: underline;
 }
 
 /* KONTAKT */
@@ -554,6 +565,13 @@ p{
     margin: 37px auto;
     justify-content: space-between;
 }
+.adresy a{
+    color:white;
+    text-decoration: none;
+}
+.adresy a:hover{
+    text-decoration: underline;
+}
 .dane-kontaktowe{
     color:white;
     width:255px;
@@ -561,46 +579,137 @@ p{
 .dane-kontaktowe p{
     line-height:3px;
 }
-.formularz{
+.druga-czesc{
     color:white;
-    width:407px;
-    margin-top:43px;
+    display:flex;
+    flex-flow: row;
+    margin-top: 30px;
+}
+.druga-czesc h2{
+    font-weight: 100;
+    font-size: 1em;
+    margin-left: -18px;
+}
+.formularz{
+    width:418px;
     margin-left: 4px;
 }
 .formularz h2{
-    font-weight: 100;
-    margin-right: -5px;
-    font-size: 1em;
+    margin-right: 5px;
 }
 .formularz input, .formularz textarea, .formularz label, .formularz h2{
     display:block;
     font-family: 'Nunito', sans-serif;
     height: 26px;
-    margin-bottom: 15px;
     text-align: right;
+}
+.formularz textarea, .formularz input{
+    font-size:1.1em;
+}
+::placeholder{
+    opacity:0.5;
 }
 .formularz input[type=text]{
     width:407px;
+    margin-bottom: 15px;
 }
 .formularz textarea{
     width: 405px;
     height: 79px;
+    resize: none;
 }
 .formularz label{
     width:260px;
+    margin-bottom: 16px;
     text-align:left;
+    display:inline-block;
 }
 .formularz input[type=checkbox]{
     width: 22px;
+    margin-right:10px;
 }
 .formularz .wybor{
     display:inline;
 }
 .formularz input[type=submit]{
-    width:120px;
-    height:50px;
+    width: 117px;
+    height: 51px;
+    margin-right: 6px;
     text-align: center;
+    margin-top: 18px;
+    font-size: 1em;
+    float: right;
+    color:grey;
 }
 .formularz input[type=checkbox], .formularz input[type=submit]{
-    display:inline;
+    display:inline-block;
+}
+label.wybor{
+    margin-left: -5px;
+    margin-right: 15px;
+}
+.social-media{
+    width:120px;
+    height:400px;
+    display:flex;
+    flex-flow: column;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media a{
+    margin-left: -16px;
+}
+.praca{
+    width:210px;
+}
+.praca p{
+    margin-left: -16px;
+    word-spacing: 4px;
+    text-align: left;
+    margin-top: 25px;
+}
+.praca a{
+    color:white;
+    text-decoration: none;
+}
+.praca a:hover{
+    text-decoration: underline;
+}
+.powrot{
+    text-align: center;
+    margin-left:10px;
+    margin-top:15px;
+}
+.powrot a{
+    text-decoration: none;
+    color:white;
+}
+.powrot a:hover{
+    text-decoration: underline;
+}
+
+/* REFERENCJE */
+
+.referencje{
+    margin-top:28px;
+}
+.karuzela-referencje{
+    width:820px;
+    display:flex;
+    justify-content: space-between;
+    margin:auto;
+    margin-top:-58px;
+}
+.karuzela-referencje img{
+    margin-right:35px;
+}
+#strzalka-w-lewo-2{
+    margin-left: 5px;
+    margin-top: 54px;
+}
+#strzalka-w-prawo-2{
+    margin-right: 1px;
+    margin-top: -66px;
+    float:right;
 }

@@ -8,14 +8,11 @@
     <title>Zadanie Specjalne</title>
 
     <link rel="stylesheet" href="css/style.css">
-
-    <script src="../jq/jquery-3.4.0.min.js" defer></script>
-    <script src="js/script.js" defer></script>
-
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
 
 </head>
 <body>
-    <!--
         <div class="menu">
             <ul>
                 <li><a href="#">Menu</a></li>
@@ -43,7 +40,6 @@
         <div class="do-rozwiniecia">
             <img id="strzalka-zwrotna-menu" src="grafika/strzalka.png">
         </div>
-    -->
 
     <div class="plansza" style="height:979px;">
         <div class="baner">
@@ -311,7 +307,7 @@
         </div>
     </div>
 
-    <div id="aktualnosci" class="plansza biale-tlo" style="height:987px;">
+    <div id="aktualnosci" class="plansza biale-tlo" style="height:984px;">
         <div class="aktualnosci">
             <div class="srodkowanie">
                 <div class="naglowek"  style="width:300px">
@@ -319,38 +315,66 @@
                     <h1 style="font-size: 1.75em;padding-top: 67px;margin-right: -2px;">AKTUALNOŚCI</h1>
                 </div>
                 <hr style="margin-top:2px;">
+                <img id="strzalka-w-lewo" class="strzalki" src="grafika/strzalka-w-lewo.png">
                 <div class="mini-karuzela">
-                    <img id="strzalka-w-lewo" class="strzalki" src="grafika/strzalka-w-lewo.png">
-                    <div class="opcja">
-                        <img src="grafika/aktualnosci1.png">
-                        <h3>1.06.2013</h3>
-                        <h2>LOREM IPSUM</h2>
-                        <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
-                        <a href="#" class="wiecej">więcej</a>
-                    </div>
-                    <div class="opcja">
-                        <img src="grafika/aktualnosci4.png">
-                        <h3>1.06.2013</h3>
-                        <h2 style="margin-left:2px;">LOREM IPSUM</h2>
-                        <p style="margin-left:2px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
-                        <a style="margin-left:2px;" href="#" class="wiecej">więcej</a>
-                    </div>
-                    <div class="opcja">
-                        <img style="margin-left:2px;" src="grafika/aktualnosci3.png">
-                        <h3>1.06.2013</h3>
-                        <h2 style="margin-left:3px;">LOREM IPSUM</h2>
-                        <p style="margin-left:3px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
-                        <a style="margin-left:3px;" href="#" class="wiecej">więcej</a>
-                    </div>
-                    <div class="opcja">
-                        <img src="grafika/aktualnosci2.png">
-                        <h3>1.06.2013</h3>
-                        <h2>LOREM IPSUM</h2>
-                        <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
-                        <a href="#" class="wiecej">więcej</a>
-                    </div>
-                <img id="strzalka-w-prawo" class="strzalki" src="grafika/strzalka-w-prawo.png">
+                        <div class="opcja">
+                            <img src="grafika/aktualnosci1.png">
+                            <h3>1.06.2013</h3>
+                            <h2>LOREM IPSUM</h2>
+                            <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
+                            <a href="#" class="wiecej">więcej</a>
+                        </div>
+                        <div class="opcja">
+                            <img src="grafika/aktualnosci4.png">
+                            <h3>1.06.2013</h3>
+                            <h2 style="margin-left:2px;">LOREM IPSUM</h2>
+                            <p style="margin-left:2px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
+                            <a style="margin-left:2px;" href="#" class="wiecej">więcej</a>
+                        </div>
+                        <div class="opcja">
+                            <img style="margin-left:2px;" src="grafika/aktualnosci3.png">
+                            <h3>1.06.2013</h3>
+                            <h2 style="margin-left:3px;">LOREM IPSUM</h2>
+                            <p style="margin-left:3px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
+                            <a style="margin-left:3px;" href="#" class="wiecej">więcej</a>
+                        </div>
+                        <div class="opcja">
+                            <img src="grafika/aktualnosci2.png">
+                            <h3>1.06.2013</h3>
+                            <h2>LOREM IPSUM</h2>
+                            <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
+                            <a href="#" class="wiecej">więcej</a>
+                        </div>
+                        <div class="opcja">
+                            <img src="grafika/aktualnosci1.png">
+                            <h3>1.06.2013</h3>
+                            <h2>LOREM IPSUM</h2>
+                            <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
+                            <a href="#" class="wiecej">więcej</a>
+                        </div>
+                        <div class="opcja">
+                            <img src="grafika/aktualnosci4.png">
+                            <h3>1.06.2013</h3>
+                            <h2 style="margin-left:2px;">LOREM IPSUM</h2>
+                            <p style="margin-left:2px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
+                            <a style="margin-left:2px;" href="#" class="wiecej">więcej</a>
+                        </div>
+                        <div class="opcja">
+                            <img style="margin-left:2px;" src="grafika/aktualnosci3.png">
+                            <h3>1.06.2013</h3>
+                            <h2 style="margin-left:3px;">LOREM IPSUM</h2>
+                            <p style="margin-left:3px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
+                            <a style="margin-left:3px;" href="#" class="wiecej">więcej</a>
+                        </div>
+                        <div class="opcja">
+                            <img src="grafika/aktualnosci2.png">
+                            <h3>1.06.2013</h3>
+                            <h2>LOREM IPSUM</h2>
+                            <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
+                            <a href="#" class="wiecej">więcej</a>
+                        </div>
                 </div>
+                <img id="strzalka-w-prawo" class="strzalki" src="grafika/strzalka-w-prawo.png">
             </div>
         </div>
     </div>
@@ -358,7 +382,7 @@
     <div id="kontakt" class="plansza" style="height:900px;">
         <div class="kontakt">
             <div style="width:836px;" class="srodkowanie">
-                <div style="margin-top:45px;padding-right:27px;" class="naglowek-bialy">
+                <div style="margin-top:49px;padding-right:27px;" class="naglowek-bialy">
                     <img style="margin-left: 12px;" src="grafika/icon-user.png">
                     <h1 style="letter-spacing: 3px;padding-top: 26px;margin-right: -27px;">KONTAKT</h1>
                 </div>
@@ -370,15 +394,15 @@
                         <p style="margin-bottom:38px;">04-555 Warszawa</p>
                         <p>tel.: (22) 812-58-98</p>
                         <p style="margin-bottom:38px;">fax.: (22) 815-49-83</p>
-                        <p>simple@simple.com.pl</p>
+                        <p><a href="mailto:simple@simple.com.pl">simple@simple.com.pl</a></p>
                     </div>
                     <div style="margin-left:-10px;" class="dane-kontaktowe">
                         <p>SIMPLE S.A. - Ośrodek Badawczo</p>
                         <p style="margin-bottom:37px;">-Rozwojowy Lublin</p>
                         <p>ul. Wolska 11A/4</p>
                         <p style="margin-bottom:38px;">20-411 Lublin</p>
-                        <p style="margin-bottom:38px;">tel. kom: _48 696 001 286</p>
-                        <p>lublin@simple.com.pl</p>
+                        <p style="margin-bottom:38px;">tel. kom: +48 696 001 286</p>
+                        <p><a href="mailto:lublin@simple.com.pl">lublin@simple.com.pl</a></p>
                     </div>
                     <div style="margin-right: -31px;" class="dane-kontaktowe">
                         <p style="margin-bottom:37px;">SIMPLE S.A. - oddział Rzeszów</p>
@@ -386,7 +410,7 @@
                         <p style="margin-bottom:38px;">35-326 Rzeszów</p>
                         <p>tel, kom.: +48 696 001 235</p>
                         <p style="margin-bottom:38px;">fax.: (17) 865 42 41</p>
-                        <p>rzeszow@simple.com.pl</p>
+                        <p><a href="mailto:rzeszow@simple.com.pl">rzeszow@simple.com.pl</a></p>
                     </div>
                 </div>
                 <hr style="padding-top:0;">
@@ -399,19 +423,65 @@
                             <input type="text" name="numer" id="numer" placeholder="Numer Telefonu">
                             <input type="text" name="temat" id="temat" placeholder="Temat">
                             <textarea placeholder="Treść zapytania"></textarea>
-                            <label>Wybierz rodzaj prezentacji</label>
+                            <label><p>Wybierz rodzaj prezentacji</p></label>
+                            <input type="submit" id="wyslij" value="Wyślij">
                             <label class="wybor">
                                 <input type="checkbox" name="prezentacja" id="siedziba">W siedzibie
                             </label>
                             <label class="wybor">
                                 <input type="checkbox" name="prezentacja" id="mutimedialna">Multimedialna
                             </label>
-                            <input type="submit" id="wyslij" value="Wyślij">
                         </textarea>
                     </div>
+                    <div class="social-media">
+                        <h2>SOCIAL MEDIA</h2>
+                        <a style="margin-top: -18px;"href="https://www.facebook.com/SimpleS.A.Warszawa"><img src="grafika/logo-fb-biale.png" alt="facebook"></a>
+                        <a href="https://twitter.com/SIMPLEerp"><img src="grafika/icon-twitter.png" alt="twitter"></a>
+                        <a href="https://plus.google.com/+SimplePlSIMPLE"><img src="grafika/logo-g+-biale.png" alt="google plus"></a>
+                        <a href="http://www.linkedin.com/company/41370?trk=tyah"><img src="grafika/logo-in-biale.png" alt="linked in"></a>
+                    </div>
+                    <div class="praca">
+                        <h2>PRACA</h2>
+                        <p>
+                            Zainteresowane osoby prosimy o przesłanie CV wraz z listem motywacyjnym na adres:
+                        </p>
+                        <p style="margin-top:45px;">
+                            <a href="mailto:praca@simple.com.pl">praca@simple.com.pl</a>
+                        </p>
+                        <p style="margin-top:83px;">
+                            <a href="#">Zobacz nasze oferty...</a>
+                        </p>
+                    </div>
                 </div>
+                <hr style="padding-top: 35px;">
+                <div class="powrot"><a href="#"">Powrót na górę strony</a></div>
             </div>
         </div>
     </div>
+
+    <div id="referencje" class="plansza biale-tlo" style="height:145px;">
+        <div class="referencje">
+            <div class="srodkowanie">
+                <img id="strzalka-w-lewo-2" class="strzalki" src="grafika/strzalka-w-lewo.png">
+                <div class="karuzela-referencje">
+                    <img style="margin-top: 9px;" src="grafika/logo-ernst-young.png">
+                    <img style="margin-top: -6px;" src="grafika/logo-ministerstwo-zdrowia.png">
+                    <img src="grafika/logo-tnt.png">
+                    <img style="margin-top: 17px;" src="grafika/logo-vision-express.png">
+                    <img style="margin-top: -4px;" src="grafika/logo-bell.png">
+                    <img style="margin-top: 9px;" src="grafika/logo-ernst-young.png">
+                    <img style="margin-top: -6px;" src="grafika/logo-ministerstwo-zdrowia.png">
+                    <img src="grafika/logo-tnt.png">
+                    <img style="margin-top: 17px;" src="grafika/logo-vision-express.png">
+                    <img style="margin-top: -4px;" src="grafika/logo-bell.png">
+                </div>
+                <img id="strzalka-w-prawo-2" class="strzalki" src="grafika/strzalka-w-prawo.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="../jq/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

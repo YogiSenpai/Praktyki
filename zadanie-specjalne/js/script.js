@@ -31,6 +31,23 @@ $(document).ready(function(){
             }
     });
 
+    $('.mini-karuzela').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        nextArrow: '#strzalka-w-prawo',
+        prevArrow: '#strzalka-w-lewo'
+    });
+
+    $('.karuzela-referencje').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        nextArrow: '#strzalka-w-prawo-2',
+        prevArrow: '#strzalka-w-lewo-2'
+      });
 });
 
 document.addEventListener("DOMContentLoaded", function() {
