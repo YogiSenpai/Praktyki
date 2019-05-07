@@ -1,487 +1,482 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Zadanie Specjalne</title>
+        <title>Zadanie Specjalne</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
-
-</head>
-<body>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+    </head>
+    <body>
         <div class="menu">
+            <ul class="menu-poczatek">
+                <li><a id="menu-naglowek" href="#">Menu</a></li>
+            </ul>
+            <hr>
             <ul>
-                <li><a href="#">Menu</a></li>
-                <hr/>
                 <li><a href="#">Branże</a></li>
                 <li><a href="#">Produkty</a></li>
                 <li><a href="#">Usługi</a></li>
                 <li><a href="#">Aktualności</a></li>
                 <li><a href="#">Referencje</a></li>
                 <li><a href="#">Kontakt</a></li>
-                <hr/>
+            </ul>
+            <hr>
+            <ul>
                 <li><a href="#">O firmie</a></li>
                 <li><a href="#">Nagrody</a></li>
-                <li><a href="#">Relacje inwestorskie</a></li>
+                <li><a id="odstep" href="#">Relacje inwestorskie</a></li>
                 <li><a href="#">Partnerzy</a></li>
                 <li><a href="#">Kariera</a></li>
                 <li><a href="#">Strefa klienta</a></li>
-                <hr/>
             </ul>
-            <a href="https://www.facebook.com/SimpleS.A.Warszawa"><img src="grafika/logo-fb.png"></a>
-            <a href="http://www.linkedin.com/company/41370?trk=tyah"><img src="grafika/logo-in.png"></a>
-            <img id="strzalka-menu" src="grafika/strzalka.png">
+            <hr>
+            <a href="https://www.facebook.com/SimpleS.A.Warszawa"><img src="grafika/logo-fb.png" alt="logo facebook"></a>
+            <a href="http://www.linkedin.com/company/41370?trk=tyah"><img id="logo-linked-in" src="grafika/logo-in.png" alt="logo linked in"></a>
+            <img id="strzalka-zwijania" src="grafika/strzalka.png" alt="strzałka zwijania">
+        </div>
+        <div class="zwiniete">
+            <img id="strzalka-rozwijania" src="grafika/strzalka.png" alt="strzałka rozwijania">
         </div>
 
-        <div class="do-rozwiniecia">
-            <img id="strzalka-zwrotna-menu" src="grafika/strzalka.png">
+        <div id="baner" class="plansza">
+            <div class="baner">
+                <div class="srodkowanie">
+                    <a href="#"><img id="logo-simple" src="grafika/logo-simple.png" alt="logo"></a>
+                    <ul>
+                        <li><a href="#branze">Branże</a></li>
+                        <li><a href="#produkty">Produkty</a></li>
+                        <li><a href="#uslugi">Usługi</a></li>
+                        <li><a href="#aktualnosci">Aktualności</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                        <li><a href="#referencje">Referencje</a></li>
+                    </ul>
+                    <div class="wyszukiwarka">
+                        <div id="zapytanie">
+                            <input type="text" name="wyszukiwanie">
+                        </div>
+                        <div id="ikona-lupa">
+                            <img src="grafika/icon-szukaj.png" alt="ikona lupy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="karuzela">
+                <img id="pierwszy" class="full" src="grafika/glowna1.png" alt="zdjęcie">
+                <img id="drugi" class="full" src="grafika/glowna2.png" alt="zdjęcie">
+                <img id="trzeci" class="full" src="grafika/glowna3.png" alt="zdjęcie">
+                <img id="czwarty" class="full" src="grafika/glowna4.png" alt="zdjęcie">
+            </div>
+            <div id="pierwszy-tekst" class="tekst-na-grafice">
+                <div class="tytul">
+                    <h1 class="pierwsza-linijka">SIMPLE</h1>
+                    <h1 class="druga-linijka">- z nami biznes jest prostszy!</h1>
+                    <a href="#"><h4>Dowiedź się więcej</h4></a>
+                </div>
+            </div>
+            <div id="drugi-tekst" class="tekst-na-grafice">
+                <div class="tytul">
+                    <h1 class="pierwsza-linijka">SIMPLE</h1>
+                    <h1 class="druga-linijka">- z nami biznes jest prostszy!</h1>
+                    <a href="#"><h4>Dowiedź się więcej</h4></a>
+                </div>
+            </div>
+            <div id="trzeci-tekst" class="tekst-na-grafice">
+                <div class="tytul">
+                    <h1 class="pierwsza-linijka">SIMPLE</h1>
+                    <h1 class="druga-linijka">- z nami biznes jest prostszy!</h1>
+                    <a href="#"><h4>Dowiedź się więcej</h4></a>
+                </div>
+            </div>
+            <div id="czwarty-tekst" class="tekst-na-grafice">
+                <div class="tytul">
+                    <h1 class="pierwsza-linijka">SIMPLE</h1>
+                    <h1 class="druga-linijka">- z nami biznes jest prostszy!</h1>
+                    <a href="#"><h4>Dowiedź się więcej</h4></a>
+                </div>
+            </div>
+            <div class="dolna-sekcja">
+                <div class="przyciski">
+                    <button id="pierwszy-przycisk"></button>
+                    <button id="drugi-przycisk"></button>
+                    <button id="trzeci-przycisk"></button>
+                    <button id="czwarty-przycisk"></button>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-zgloszenie">
+                        <img src="grafika/icon-newsletter.png" alt="ikona newslettera">
+                        <label>Chcesz otrzymywać od nas Newsletter?</label>
+                        <input type="text" name="newsletter">
+                    </div>
+                    <input type="submit" id="zapisz-sie" value="Zapisz się">
+                </div>
+            </div>
         </div>
 
-    <div class="plansza" style="height:979px;">
-        <div class="baner">
+        <div id="branze" class="plansza">
             <div class="srodkowanie">
-                <a href="#"><img id="logo-simple" src="grafika/logo-simple.png" alt="logo"></a>
-                <ul>
-                    <li><a href="#branze">Branże</a></li>
-                    <li><a href="#produkty">Produkty</a></li>
-                    <li><a href="#uslugi">Usługi</a></li>
-                    <li><a href="#aktualnosci">Aktualności</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                    <li><a href="#referencje">Referencje</a></li>
-                </ul>
-                <div class="wyszukiwarka">
-                    <div id="zapytanie">
-                        <input type="text" name="wyszukiwanie">
+                <div class="branze">
+                    <div class="naglowek-bialy">
+                        <img src="grafika/icon-branze.png" alt="ikona branże">
+                        <h1>BRANŻE</h1>
                     </div>
-                    <div id="ikona-lupa">
-                        <img src="grafika/icon-szukaj.png">
+                    <hr>
+                    <div class="siatka">
+                        <div class="kafelek">
+                            <p>EDUKACJA</p>
+                            <img class="cien" src="grafika/cien.png" alt="edukacja">
+                            <img class="obraz" src="grafika/edukacja.png" alt="edukacja">
+                        </div>
+                        <div class="kafelek">
+                            <p>TRANSPORT & LOGISTYKA</p>
+                            <img class="cien" src="grafika/cien.png" alt="transport i logistyka">
+                            <img class="obraz" src="grafika/transport.png" alt="transport i logistyka">
+                        </div>
+                        <div class="kafelek">
+                            <p>PRODUKCJA</p>
+                            <img class="cien" src="grafika/cien.png" alt="producja">
+                            <img class="obraz" src="grafika/produkcja.png" alt="producja">
+                        </div>
+                        <div class="kafelek">
+                            <p>BUDOWNICTWO</p>
+                            <img class="cien" src="grafika/cien.png" alt="budownictwo">
+                            <img class="obraz" src="grafika/budownictwo.png" alt="budownictwo">
+                        </div>
+                        <div class="kafelek">
+                            <p>INSTYTUTY</p>
+                            <img class="cien" src="grafika/cien.png" alt="instytuty">
+                            <img class="obraz" src="grafika/instytuty.png" alt="instytuty">
+                        </div>
+                        <div class="kafelek">
+                            <p>MEDYCYNA</p>
+                            <img class="cien" src="grafika/cien.png" alt="medycyna">
+                            <img class="obraz" src="grafika/medycyna.png" alt="medycyna">
+                        </div>
+                        <div class="kafelek">
+                            <p>HANDEL</p>
+                            <img class="cien-widoczny" src="grafika/cien.png" alt="handel">
+                        </div>
+                        <div class="kafelek">
+                            <p>MSP</p>
+                            <img class="cien-widoczny" src="grafika/cien.png" alt="msp">
+                        </div>
+                        <div class="kafelek">
+                            <p>ADMINISTRACJA PUBLICZNA</p>
+                            <img class="cien-widoczny" src="grafika/cien.png" alt="administracja publiczna">
+                        </div>
+                        <div class="teksty">
+                            <p>SIMPLE to znak rozpoznawczy szerokiej rodziny rozwiązań informatycznych wspomagających zarządzanie obszsarami: finansów obrotu towarowego, personelu, procesu, budownictwa, produkcji, łańcucha dostaw czy relacji z klientami. Od ponad 24 lat dostarczamy wyspecjalizowane usługi integracji rozwiązań informatycznych i</p>
+                        </div>
+                        <div class="teksty">
+                            <p id="wiekszy-akapit">doradztwa biznesowego. Nasze produkty i usługi znalazły uznanie ponad 3500 klientów.</p>
+                            <p>Jesteśmy ludźmi, którzy doskonale znają Twój biznes. Opierając się na naszym doświadczeniu proponujemy rozwiązania, które powstały w oparciu o</p>
+                        </div>
+                        <div class="teksty">
+                            <p>wiedzę zatrudnianych przez nas ekspertów, a które generalnie podnoszą rangę prowadzonych procesów biznesowych i spełniają specyficzne wymagania przedsiębiorstw poszczególnych branż, zapewniając możliwość odniesienia sukcesu w coraz silniej konkurencyjnym otoczeniu.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="karuzela">
-            <img id="pierwszy" class="full" src="grafika/glowna1.png">
-            <img id="drugi" class="full" src="grafika/glowna2.png">
-            <img id="trzeci" class="full" src="grafika/glowna3.png">
-            <img id="czwarty" class="full" src="grafika/glowna4.png">
-        </div>
-        <div id="pierwszy-tekst" class="tekst-na-grafice">
-            <div class="tytul">
-                <h1 class="pierwsza-linijka">SIMPLE</h1>
-                <h1 class="druga-linijka">- z nami biznes jest prostszy!</h1>
-                <a href="#"><h4>Dowiedź się więcej</h4></a>
-            </div>
-        </div>
-        <div id="drugi-tekst" class="tekst-na-grafice">
-            <div class="tytul">
-                <h1 class="pierwsza-linijka">SIMPLE</h1>
-                <h1 class="druga-linijka">- z nami biznes jest prostszy!</h1>
-                <a href="#"><h4>Dowiedź się więcej</h4></a>
-            </div>
-        </div>
-        <div id="trzeci-tekst" class="tekst-na-grafice">
-            <div class="tytul">
-                <h1 class="pierwsza-linijka">SIMPLE</h1>
-                <h1 class="druga-linijka">- z nami biznes jest prostszy!</h1>
-                <a href="#"><h4>Dowiedź się więcej</h4></a>
-            </div>
-        </div>
-        <div id="czwarty-tekst" class="tekst-na-grafice">
-            <div class="tytul">
-                <h1 class="pierwsza-linijka">SIMPLE</h1>
-                <h1 class="druga-linijka">- z nami biznes jest prostszy!</h1>
-                <a href="#"><h4>Dowiedź się więcej</h4></a>
-            </div>
-        </div>
-        <div class="dolna-sekcja">
-            <div class="przyciski">
-                <button id="pierwszy-przycisk"></button>
-                <button id="drugi-przycisk"></button>
-                <button id="trzeci-przycisk"></button>
-                <button id="czwarty-przycisk"></button>
-            </div>
-            <div class="newsletter">
-                <div class="chcesz-newsletter">
-                    <img src="grafika/icon-newsletter.png">
-                    <label>Chcesz otrzymywać od nas Newsletter?</label>
-                    <input type="text" name="newsletter">
+        <div id="produkty" class="plansza biale-tlo">
+            <div class="produkty">
+                <div class="srodkowanie">
+                    <div class="naglowek">
+                        <img src="grafika/icon-produkty.png" alt="ilona produkty">
+                        <h1>PRODUKTY</h1>
+                    </div>
+                    <hr>
+                    <div class="teksty-produkty">
+                        <div class="tekst-z-lewej"><p>Nieustannie doskonalimy nasze produkty i usługi. Budujemy naszą oferte z myślą o potrzebach biznesowych i profilach branżowych naszych Klientów.</p>
+                            <p class="akapit">Nasza oferta obejmuje bogate portfolio innowacyjnych systemów informatycznych</p></div>
+                        <div class="tekst-z-prawej"><p>kompleksowo wspomagających zarządzanie - powstałych na bazie blisko dzwudziestoletnich doświadczeń i liczbie ponad 23 tysięcy użytkowników - wzbogacone kompetencjami związanymi z optymalnym doborem infrastruktury informatycznej i profesjonalnymi usługami.</p></div>
+                    </div>
+                    <div class="kolka">
+                        <div class="pojedyncze-kolko">
+                            <div class="nazwa-w-kolku">
+                                <a href="#">WMS</a>
+                            </div>
+                            <img src="grafika/cien-kolisty.png" alt="">
+                        </div>
+                        <div class="pojedyncze-kolko">
+                            <div class="nazwa-w-kolku">
+                                <a href="#">SIMPLE.<br>ERP</a>
+                            </div>
+                            <img src="grafika/cien-kolisty.png" alt="">
+                        </div>
+                        <div class="pojedyncze-kolko">
+                            <div class="nazwa-w-kolku">
+                                <a href="#">SIMPLE.<br>SPRINT</a>
+                            </div>
+                            <img src="grafika/cien-kolisty.png" alt="">
+                        </div>
+                        <div class="pojedyncze-kolko">
+                            <div class="nazwa-w-kolku">
+                                <a href="#">SIMPLE.<br>CRM</a>
+                            </div>
+                            <img src="grafika/cien-kolisty.png" alt="">
+                        </div>
+                        <div class="pojedyncze-kolko">
+                            <div class="nazwa-w-kolku">
+                                <a href="#">MICROSOFT DYNAMICS<br>CRM 2011</a>
+                            </div>
+                            <img src="grafika/cien-kolisty.png" alt="">
+                        </div>
+                        <div class="pojedyncze-kolko">
+                            <div class="nazwa-w-kolku">
+                                <a href="#">OBIEG DOKUMENTÓW</a>
+                            </div>
+                            <img src="grafika/cien-kolisty.png" alt="">
+                        </div>
+                        <div class="pojedyncze-kolko">
+                            <div class="nazwa-w-kolku">
+                                <a href="#">SIMPLE.<br>BI</a>
+                            </div>
+                            <img src="grafika/cien-kolisty.png" alt="">
+                        </div>
+                        <div class="pojedyncze-kolko">
+                            <div class="nazwa-w-kolku">
+                                <a href="#">SIMPLE.<br>APS</a>
+                            </div>
+                            <img src="grafika/cien-kolisty.png" alt="">
+                        </div>
+                        <div class="pojedyncze-kolko">
+                            <div class="nazwa-w-kolku">
+                                <a href="#">SIMPLE.<br>SCM</a>
+                            </div>
+                            <img src="grafika/cien-kolisty.png" alt="">
+                        </div>
+                        <div class="pojedyncze-kolko">
+                            <div class="nazwa-w-kolku">
+                                <a href="#">eSIMPLE.<br>KARO HRMS</a>
+                            </div>
+                            <img src="grafika/cien-kolisty.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <input id="zapisz-sie" type="submit" value="Zapisz się">
             </div>
         </div>
-    </div>
 
-    <div id="branze" class="plansza" style="height:961px;">
-        <div class="srodkowanie">
-            <div class="branze">
-                <div class="naglowek-bialy">
-                    <img src="grafika/icon-branze.png">
-                    <h1>BRANŻE</h1>
-                </div>
-                <hr>
-                <div class="siatka">
-                    <div class="kafelek">
-                        <p style="margin-left:108px;padding-top:2px;">EDUKACJA</p>
-                        <img class="cien" src="grafika/cien-1.png">
-                        <img class="obraz" src="grafika/edukacja.png">
+        <div id="uslugi" class="plansza">
+            <div class="uslugi">
+                <div class="srodkowanie">
+                    <div class="naglowek-bialy">
+                        <img id="ikona-uslugi" src="grafika/icon-uslugi.png" alt="ikona usługi">
+                        <h1 id="odstep-naglowka-uslugi">USŁUGI</h1>
                     </div>
-                    <div class="kafelek">
-                        <p style="margin-left:25px;padding-top:2px;">TRANSPORT & LOGISTYKA</p>
-                        <img class="cien" src="grafika/cien-1.png">
-                        <img class="obraz" src="grafika/transport.png">
+                    <hr>
+                    <div class="siatka-2">
+                        <div class="kolumna">
+                            <div class="element">
+                                <img src="grafika/icon-wdrozenia.png" alt="ikona wdrożenia">
+                                <p>WDROŻENIA ERP, CRM, BI</p>
+                            </div>
+                            <div class="element">
+                                <img src="grafika/icon-doradztwo.png" alt="ikona doradztwo">
+                                <p>DORADZTWO W ZAKRESIE INFRASTRUKTURY INFORMATYCZNEJ</p>
+                            </div>
+                        </div>
+                        <div class="kolumna-srodkowa">
+                            <div class="element">
+                                <img src="grafika/icon-szkolenia.png" alt="ikona szkolenia">
+                                <p>SZKOLENIA</p>
+                            </div>
+                        </div>
+                        <div class="kolumna">
+                            <div class="element">
+                                <img src="grafika/icon-consulting.png" alt="ikona konsulting">
+                                <p>KONSULTING ERP,CRM,BI</p>
+                            </div>
+                            <div class="element">
+                                <img src="grafika/icon-dofinansowanie.png" alt="ikona dofinansowanie">
+                                <p>DOFINANSOWANIE I LEASING</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="kafelek">
-                        <p style="margin-left:96px;padding-top:2px">PRODUKCJA</p>
-                        <img class="cien" src="grafika/cien-1.png">
-                        <img class="obraz" src="grafika/produkcja.png">
-                    </div>
-                    <div class="kafelek">
-                        <p style="margin-left:80px;">BUDOWNICTWO</p>
-                        <img class="cien" src="grafika/cien-1.png">
-                        <img class="obraz" src="grafika/budownictwo.png">
-                    </div>
-                    <div class="kafelek">
-                        <p style="margin-left:98px;">INSTYTUTY</p>
-                        <img class="cien" src="grafika/cien-1.png">
-                        <img class="obraz" src="grafika/instytuty.png">
-                    </div>
-                    <div class="kafelek">
-                        <p style="margin-left:116px;">MEDYCYNA</p>
-                        <img class="cien" src="grafika/cien-1.png">
-                        <img class="obraz" src="grafika/medycyna.png">
-                    </div>
-                    <div class="kafelek">
-                        <p style="margin-left:118px;padding-top:4px;">HANDEL</p>
-                        <img class="cien-widoczny" src="grafika/cien.png">
-                    </div>
-                    <div class="kafelek">
-                        <p style="margin-left:137px;padding-top:5px;">MSP</p>
-                        <img class="cien-widoczny" src="grafika/cien.png">
-                    </div>
-                    <div class="kafelek">
-                        <p style="margin-left:15px;padding-top:5px">ADMINISTRACJA PUBLICZNA</p>
-                        <img class="cien-widoczny" src="grafika/cien.png">
-                    </div>
-                    <div class="teksty">
-                        <p>SIMPLE to znak rozpoznawczy szerokiej rodziny rozwiązań informatycznych wspomagających zarządzanie obszsarami: finansów obrotu towarowego, personelu, procesu, budownictwa, produkcji, łańcucha dostaw czy relacji z klientami. Od ponad 24 lat dostarczamy wyspecjalizowane usługi integracji rozwiązań informatycznych i</p>
-                    </div>
-                    <div class="teksty" style="margin-left:-4px;">
-                        <p style="margin-bottom:19px;">doradztwa biznesowego. Nasze produkty i usługi znalazły uznanie ponad 3500 klientów.</p>
-                        <p>Jesteśmy ludźmi, którzy doskonale znają Twój biznes. Opierając się na naszym doświadczeniu proponujemy rozwiązania, które powstały w oparciu o</p>
-                    </div>
-                    <div class="teksty">
-                        <p>wiedzę zatrudnianych przez nas ekspertów, a które generalnie podnoszą rangę prowadzonych procesów biznesowych i spełniają specyficzne wymagania przedsiębiorstw poszczególnych branż, zapewniając możliwość odniesienia sukcesu w coraz silniej konkurencyjnym otoczeniu.</p>
+                    <div class="teksty-produkty bialy-tekst" style="margin-top: 38px;">
+                        <div style="margin-left: -17px;">
+                            <p class="teksciki">SIMPLE zapewnia klientom profesjonalną pomoc przy realizacji wielowariantowych, indywidualnych rozwiązań oferując usługi dzięki którym nasi Klienci szybko odnoszą konkretne korzyści biznesowe.</p>
+                            <p class="teksciki">Stawiamy do dyspozycji Państwa nasz doświadczony zespół programistów. Kompleksowo świadczymy usługi związane z tworzeniem na zlecenie dedykowanego oprogramowania. Nasze doświadczenie obejmuje integrację systemów wspomagających</p>
+                        </div>
+                        <div>
+                            <p class="teksciki">zarządzanie z urządzeniami automatyki przemysłowej, wagami, dozownikami, a także systemami telekomunikacyjnymi i centralami telefonicznymi.</p>
+                            <p style="letter-spacing: 0.6px;">Nasi programiści są biegli w tworzeniu oprogramowania dla środowisk Microsoft Windows-SQL (w tym SQL 2005 i SQL 2012). Posiadamy doświadczenie w programowaniu z wykorzystaniem między innymi Powe Builder, Visual Basic, Studio.net, InfoMaker, CrystalReports.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="produkty" class="plansza biale-tlo" style="height:981px;">
-        <div class="produkty">
-            <div class="srodkowanie">
-                <div class="naglowek">
-                    <img src="grafika/icon-produkty.png">
-                    <h1>PRODUKTY</h1>
-                </div>
-                <hr>
-                <div class="teksty-produkty">
-                    <div class="tekst-z-lewej"><p>Nieustannie doskonalimy nasze produkty i usługi. Budujemy naszą oferte z myślą o potrzebach biznesowych i profilach branżowych naszych Klientów.</p>
-                        <p style="text-indent: 31px;margin-top:-20px;">Nasza oferta obejmuje bogate portfolio innowacyjnych systemów informatycznych</p></div>
-                    <div class="tekst-z-prawej"><p>kompleksowo wspomagających zarządzanie - powstałych na bazie blisko dzwudziestoletnich doświadczeń i liczbie ponad 23 tysięcy użytkowników - wzbogacone kompetencjami związanymi z optymalnym doborem infrastruktury informatycznej i profesjonalnymi usługami.</p></div>
-                </div>
-                <div class="kolka">
-                    <div class="pojedyncze-kolko" style="margin-left: -2px;">
-                        <div class="nazwa-w-kolku">
-                            <p style="margin-top:68px;">WMS</p>
-                        </div>
-                        <img src="grafika/cien-kolisty.png">
+        <div id="aktualnosci" class="plansza biale-tlo">
+            <div class="aktualnosci">
+                <div class="srodkowanie">
+                    <div class="naglowek"  style="width:300px">
+                        <img style="margin-left: 1px;margin-top: 42px;" src="grafika/icon-aktualnosci.png" alt="ikona aktualności">
+                        <h1 style="font-size: 1.75em;padding-top: 67px;margin-right: -2px;">AKTUALNOŚCI</h1>
                     </div>
-                    <div class="pojedyncze-kolko">
-                        <div class="nazwa-w-kolku" style="margin-left: 6px;">
-                            <p>SIMPLE.<br>ERP</p>
-                        </div>
-                        <img src="grafika/cien-kolisty.png">
-                    </div>
-                    <div class="pojedyncze-kolko" style="margin-right: 10px;">
-                        <div class="nazwa-w-kolku" style="margin-left:5px;">
-                            <p>SIMPLE.<br>SPRINT</p>
-                        </div>
-                        <img src="grafika/cien-kolisty.png">
-                    </div>
-                    <div class="pojedyncze-kolko">
-                        <div class="nazwa-w-kolku">
-                            <p>SIMPLE.<br>CRM</p>
-                        </div>
-                        <img src="grafika/cien-kolisty.png">
-                    </div>
-                    <div class="pojedyncze-kolko">
-                        <div class="nazwa-w-kolku" style="margin-top:-14px;">
-                            <p>MICROSOFT DYNAMICS CRM 2011</p>
-                        </div>
-                        <img src="grafika/cien-kolisty.png">
-                    </div>
-                    <div class="pojedyncze-kolko">
-                        <div class="nazwa-w-kolku" style="margin-top:-6px;">
-                            <p>OBIEG DOKUMENTÓW</p>
-                        </div>
-                        <img src="grafika/cien-kolisty.png">
-                    </div>
-                    <div class="pojedyncze-kolko">
-                        <div class="nazwa-w-kolku" style="margin-left:6px;">
-                            <p>SIMPLE.<br>BI</p>
-                        </div>
-                        <img src="grafika/cien-kolisty.png">
-                    </div>
-                    <div class="pojedyncze-kolko">
-                        <div class="nazwa-w-kolku">
-                            <p>SIMPLE.<br>APS</p>
-                        </div>
-                        <img src="grafika/cien-kolisty.png">
-                    </div>
-                    <div class="pojedyncze-kolko" style="margin-left:8px;">
-                        <div class="nazwa-w-kolku" style="margin-left:6px;">
-                            <p>SIMPLE.<br>SCM</p>
-                        </div>
-                        <img src="grafika/cien-kolisty.png">
-                    </div>
-                    <div class="pojedyncze-kolko" style="margin-right: -3px;">
-                        <div class="nazwa-w-kolku">
-                            <p>eSIMPLE. KARO HRMS</p>
-                        </div>
-                        <img src="grafika/cien-kolisty.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="uslugi" class="plansza" style="height:916px;">
-        <div class="uslugi">
-            <div class="srodkowanie">
-                <div class="naglowek-bialy">
-                    <img style="margin-left: 19px;" src="grafika/icon-uslugi.png">
-                    <h1 style="letter-spacing: 1.1px;">USŁUGI</h1>
-                </div>
-                <hr>
-                <div class="siatka-2">
-                    <div class="kolumna">
-                        <div class="element" style="margin-top: 25px;">
-                            <img src="grafika/icon-wdrozenia.png">
-                            <p style="margin-top: 10px;">WDROŻENIA ERP, CRM, BI</p>
-                        </div>
-                        <div class="element" style="margin-top: 73px;">
-                            <img style="margin-left: 103px;" src="grafika/icon-doradztwo.png">
-                            <p style="margin-left:-3px;">DORADZTWO W ZAKRESIE INFRASTRUKTURY INFORMATYCZNEJ</p>
-                        </div>
-                    </div>
-                    <div class="kolumna-srodkowa">
-                        <div class="element">
-                            <img style="margin-left: 16px;margin-top: 14px;" src="grafika/icon-szkolenia.png" style="margin-left:4px;">
-                            <p style="margin-left: 8px;margin-top: 18px;">SZKOLENIA</p>
-                        </div>
-                    </div>
-                    <div class="kolumna">
-                        <div class="element">
-                            <img style="margin-left: 66px;margin-top: 32px;" src="grafika/icon-consulting.png">
-                            <p style="margin-top: 14px;margin-right: 86px;letter-spacing: 0.5px;">KONSULTING ERP,CRM,BI</p>
-                        </div>
-                        <div class="element">
-                            <img style="margin-left: 79px;margin-top: 71px;" src="grafika/icon-dofinansowanie.png">
-                            <p style="margin-right: 64px;margin-top: 13px;">DOFINANSOWANIE I LEASING</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="teksty-produkty bialy-tekst" style="margin-top: 38px;">
-                    <div style="margin-left: -17px;"><p class="teksciki">SIMPLE zapewnia klientom profesjonalną pomoc przy realizacji wielowariantowych, indywidualnych rozwiązań oferując usługi dzięki którym nasi Klienci szybko odnoszą konkretne korzyści biznesowe.</p>
-                    <p class="teksciki">Stawiamy do dyspozycji Państwa nasz doświadczony zespół programistów. Kompleksowo świadczymy usługi związane z tworzeniem na zlecenie dedykowanego oprogramowania. Nasze doświadczenie obejmuje integrację systemów wspomagających</p></div>
-                    <div><p class="teksciki">zarządzanie z urządzeniami automatyki przemysłowej, wagami, dozownikami, a także systemami telekomunikacyjnymi i centralami telefonicznymi.</p>
-                    <p style="letter-spacing: 0.6px;">Nasi programiści są biegli w tworzeniu oprogramowania dla środowisk Microsoft Windows-SQL (w tym SQL 2005 i SQL 2012). Posiadamy doświadczenie w programowaniu z wykorzystaniem między innymi Powe Builder, Visual Basic, Studio.net, InfoMaker, CrystalReports.</p></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="aktualnosci" class="plansza biale-tlo" style="height:984px;">
-        <div class="aktualnosci">
-            <div class="srodkowanie">
-                <div class="naglowek"  style="width:300px">
-                    <img style="margin-left: 1px;margin-top: 42px;" src="grafika/icon-aktualnosci.png">
-                    <h1 style="font-size: 1.75em;padding-top: 67px;margin-right: -2px;">AKTUALNOŚCI</h1>
-                </div>
-                <hr style="margin-top:2px;">
-                <img id="strzalka-w-lewo" class="strzalki" src="grafika/strzalka-w-lewo.png">
-                <div class="mini-karuzela">
+                    <hr style="margin-top:2px;">
+                    <img id="strzalka-w-lewo" class="strzalki" src="grafika/strzalka-w-lewo.png" alt="strzalka w lewo">
+                    <div class="mini-karuzela">
                         <div class="opcja">
-                            <img src="grafika/aktualnosci1.png">
+                            <img src="grafika/aktualnosci1.png" alt="zdjęcie z aktualności">
                             <h3>1.06.2013</h3>
                             <h2>LOREM IPSUM</h2>
                             <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
                             <a href="#" class="wiecej">więcej</a>
                         </div>
                         <div class="opcja">
-                            <img src="grafika/aktualnosci4.png">
+                            <img src="grafika/aktualnosci2.png" alt="zdjęcie z aktualności">
                             <h3>1.06.2013</h3>
                             <h2 style="margin-left:2px;">LOREM IPSUM</h2>
                             <p style="margin-left:2px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
                             <a style="margin-left:2px;" href="#" class="wiecej">więcej</a>
                         </div>
                         <div class="opcja">
-                            <img style="margin-left:2px;" src="grafika/aktualnosci3.png">
+                            <img style="margin-left:2px;" src="grafika/aktualnosci3.png" alt="zdjęcie z aktualności">
                             <h3>1.06.2013</h3>
                             <h2 style="margin-left:3px;">LOREM IPSUM</h2>
                             <p style="margin-left:3px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
                             <a style="margin-left:3px;" href="#" class="wiecej">więcej</a>
                         </div>
                         <div class="opcja">
-                            <img src="grafika/aktualnosci2.png">
+                            <img src="grafika/aktualnosci4.png" alt="zdjęcie z aktualności">
                             <h3>1.06.2013</h3>
                             <h2>LOREM IPSUM</h2>
                             <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
                             <a href="#" class="wiecej">więcej</a>
                         </div>
                         <div class="opcja">
-                            <img src="grafika/aktualnosci1.png">
+                            <img src="grafika/aktualnosci1.png" alt="zdjęcie z aktualności">
                             <h3>1.06.2013</h3>
                             <h2>LOREM IPSUM</h2>
                             <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
                             <a href="#" class="wiecej">więcej</a>
                         </div>
                         <div class="opcja">
-                            <img src="grafika/aktualnosci4.png">
+                            <img src="grafika/aktualnosci2.png" alt="zdjęcie z aktualności">
                             <h3>1.06.2013</h3>
                             <h2 style="margin-left:2px;">LOREM IPSUM</h2>
                             <p style="margin-left:2px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
                             <a style="margin-left:2px;" href="#" class="wiecej">więcej</a>
                         </div>
                         <div class="opcja">
-                            <img style="margin-left:2px;" src="grafika/aktualnosci3.png">
+                            <img style="margin-left:2px;" src="grafika/aktualnosci3.png" alt="zdjęcie z aktualności">
                             <h3>1.06.2013</h3>
                             <h2 style="margin-left:3px;">LOREM IPSUM</h2>
                             <p style="margin-left:3px;">lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
                             <a style="margin-left:3px;" href="#" class="wiecej">więcej</a>
                         </div>
                         <div class="opcja">
-                            <img src="grafika/aktualnosci2.png">
+                            <img src="grafika/aktualnosci4.png" alt="zdjęcie z aktualności">
                             <h3>1.06.2013</h3>
                             <h2>LOREM IPSUM</h2>
                             <p>lorem ipsum, lorem ipsum<br>lorem ipsumlorem<br>lorem ipsum ipsum.</p>
                             <a href="#" class="wiecej">więcej</a>
                         </div>
+                    </div>
+                    <img id="strzalka-w-prawo" class="strzalki" src="grafika/strzalka-w-prawo.png" alt="strzałka w prawo">
                 </div>
-                <img id="strzalka-w-prawo" class="strzalki" src="grafika/strzalka-w-prawo.png">
             </div>
         </div>
-    </div>
 
-    <div id="kontakt" class="plansza" style="height:900px;">
-        <div class="kontakt">
-            <div style="width:836px;" class="srodkowanie">
-                <div style="margin-top:49px;padding-right:27px;" class="naglowek-bialy">
-                    <img style="margin-left: 12px;" src="grafika/icon-user.png">
-                    <h1 style="letter-spacing: 3px;padding-top: 26px;margin-right: -27px;">KONTAKT</h1>
+        <div id="kontakt" class="plansza">
+            <div class="kontakt">
+                <div style="width:836px;" class="srodkowanie">
+                    <div style="margin-top:49px;padding-right:27px;" class="naglowek-bialy">
+                        <img style="margin-left: 12px;" src="grafika/icon-user.png" alt="ikona kontakt">
+                        <h1 style="letter-spacing: 3px;padding-top: 26px;margin-right: -27px;">KONTAKT</h1>
+                    </div>
+                    <hr>
+                    <div class="adresy">
+                        <div style="margin-left:-4px;" class="dane-kontaktowe">
+                            <p style="margin-bottom:37px;">SIMPLE S.A.</p>
+                            <p>ul. Bronisława Czecha 49/51</p>
+                            <p style="margin-bottom:38px;">04-555 Warszawa</p>
+                            <p>tel.: (22) 812-58-98</p>
+                            <p style="margin-bottom:38px;">fax.: (22) 815-49-83</p>
+                            <p><a href="mailto:simple@simple.com.pl">simple@simple.com.pl</a></p>
+                        </div>
+                        <div style="margin-left:-10px;" class="dane-kontaktowe">
+                            <p>SIMPLE S.A. - Ośrodek Badawczo</p>
+                            <p style="margin-bottom:37px;">-Rozwojowy Lublin</p>
+                            <p>ul. Wolska 11A/4</p>
+                            <p style="margin-bottom:38px;">20-411 Lublin</p>
+                            <p style="margin-bottom:38px;">tel. kom: +48 696 001 286</p>
+                            <p><a href="mailto:lublin@simple.com.pl">lublin@simple.com.pl</a></p>
+                        </div>
+                        <div style="margin-right: -31px;" class="dane-kontaktowe">
+                            <p style="margin-bottom:37px;">SIMPLE S.A. - oddział Rzeszów</p>
+                            <p>ul. Rejtana 53A</p>
+                            <p style="margin-bottom:38px;">35-326 Rzeszów</p>
+                            <p>tel, kom.: +48 696 001 235</p>
+                            <p style="margin-bottom:38px;">fax.: (17) 865 42 41</p>
+                            <p><a href="mailto:rzeszow@simple.com.pl">rzeszow@simple.com.pl</a></p>
+                        </div>
+                    </div>
+                    <hr style="padding-top:0;">
+                    <div class="druga-czesc">
+                        <div class="formularz">
+                            <form>
+                                <h2>ZADAJ PYTANIE</h2>
+                                <input type="text" name="imie" id="imie" placeholder="Imię&Nazwisko">
+                                <input type="text" name="email" id="email" placeholder="Email">
+                                <input type="text" name="numer" id="numer" placeholder="Numer Telefonu">
+                                <input type="text" name="temat" id="temat" placeholder="Temat">
+                                <textarea placeholder="Treść zapytania"></textarea>
+                                <label><span>Wybierz rodzaj prezentacji</span></label>
+                                <input type="submit" id="wyslij" value="Wyślij">
+                                <label class="wybor"><input type="checkbox" name="prezentacja" id="siedziba">W siedzibie</label>
+                                <label class="wybor"><input type="checkbox" name="prezentacja" id="mutimedialna">Multimedialna</label>
+                            </form>
+                        </div>
+                        <div class="social-media">
+                            <h2>SOCIAL MEDIA</h2>
+                            <a style="margin-top: -18px;" href="https://www.facebook.com/SimpleS.A.Warszawa"><img src="grafika/logo-fb-biale.png" alt="logo facebook"></a>
+                            <a href="https://twitter.com/SIMPLEerp"><img src="grafika/icon-twitter.png" alt="logo twitter"></a>
+                            <a href="https://plus.google.com/+SimplePlSIMPLE"><img src="grafika/logo-g+-biale.png" alt="logo google plus"></a>
+                            <a href="http://www.linkedin.com/company/41370?trk=tyah"><img src="grafika/logo-in-biale.png" alt="logo linked in"></a>
+                        </div>
+                        <div class="praca">
+                            <h2>PRACA</h2>
+                            <p>Zainteresowane osoby prosimy o przesłanie CV wraz z listem motywacyjnym na adres:</p>
+                            <p style="margin-top:45px;"><a href="mailto:praca@simple.com.pl">praca@simple.com.pl</a></p>
+                            <p style="margin-top:83px;"><a href="#">Zobacz nasze oferty...</a></p>
+                        </div>
+                    </div>
+                    <hr style="padding-top: 35px;">
+                    <div class="powrot"><a href="#">Powrót na górę strony</a></div>
                 </div>
-                <hr>
-                <div class="adresy">
-                    <div style="margin-left:-4px;" class="dane-kontaktowe">
-                        <p style="margin-bottom:37px;">SIMPLE S.A.</p>
-                        <p>ul. Bronisława Czecha 49/51</p>
-                        <p style="margin-bottom:38px;">04-555 Warszawa</p>
-                        <p>tel.: (22) 812-58-98</p>
-                        <p style="margin-bottom:38px;">fax.: (22) 815-49-83</p>
-                        <p><a href="mailto:simple@simple.com.pl">simple@simple.com.pl</a></p>
-                    </div>
-                    <div style="margin-left:-10px;" class="dane-kontaktowe">
-                        <p>SIMPLE S.A. - Ośrodek Badawczo</p>
-                        <p style="margin-bottom:37px;">-Rozwojowy Lublin</p>
-                        <p>ul. Wolska 11A/4</p>
-                        <p style="margin-bottom:38px;">20-411 Lublin</p>
-                        <p style="margin-bottom:38px;">tel. kom: +48 696 001 286</p>
-                        <p><a href="mailto:lublin@simple.com.pl">lublin@simple.com.pl</a></p>
-                    </div>
-                    <div style="margin-right: -31px;" class="dane-kontaktowe">
-                        <p style="margin-bottom:37px;">SIMPLE S.A. - oddział Rzeszów</p>
-                        <p>ul. Rejtana 53A</p>
-                        <p style="margin-bottom:38px;">35-326 Rzeszów</p>
-                        <p>tel, kom.: +48 696 001 235</p>
-                        <p style="margin-bottom:38px;">fax.: (17) 865 42 41</p>
-                        <p><a href="mailto:rzeszow@simple.com.pl">rzeszow@simple.com.pl</a></p>
-                    </div>
-                </div>
-                <hr style="padding-top:0;">
-                <div class="druga-czesc">
-                    <div class="formularz">
-                        <form>
-                            <h2>ZADAJ PYTANIE</h2>
-                            <input type="text" name="imie" id="imie" placeholder="Imię&Nazwisko">
-                            <input type="text" name="email" id="email" placeholder="Email">
-                            <input type="text" name="numer" id="numer" placeholder="Numer Telefonu">
-                            <input type="text" name="temat" id="temat" placeholder="Temat">
-                            <textarea placeholder="Treść zapytania"></textarea>
-                            <label><p>Wybierz rodzaj prezentacji</p></label>
-                            <input type="submit" id="wyslij" value="Wyślij">
-                            <label class="wybor">
-                                <input type="checkbox" name="prezentacja" id="siedziba">W siedzibie
-                            </label>
-                            <label class="wybor">
-                                <input type="checkbox" name="prezentacja" id="mutimedialna">Multimedialna
-                            </label>
-                        </textarea>
-                    </div>
-                    <div class="social-media">
-                        <h2>SOCIAL MEDIA</h2>
-                        <a style="margin-top: -18px;"href="https://www.facebook.com/SimpleS.A.Warszawa"><img src="grafika/logo-fb-biale.png" alt="facebook"></a>
-                        <a href="https://twitter.com/SIMPLEerp"><img src="grafika/icon-twitter.png" alt="twitter"></a>
-                        <a href="https://plus.google.com/+SimplePlSIMPLE"><img src="grafika/logo-g+-biale.png" alt="google plus"></a>
-                        <a href="http://www.linkedin.com/company/41370?trk=tyah"><img src="grafika/logo-in-biale.png" alt="linked in"></a>
-                    </div>
-                    <div class="praca">
-                        <h2>PRACA</h2>
-                        <p>
-                            Zainteresowane osoby prosimy o przesłanie CV wraz z listem motywacyjnym na adres:
-                        </p>
-                        <p style="margin-top:45px;">
-                            <a href="mailto:praca@simple.com.pl">praca@simple.com.pl</a>
-                        </p>
-                        <p style="margin-top:83px;">
-                            <a href="#">Zobacz nasze oferty...</a>
-                        </p>
-                    </div>
-                </div>
-                <hr style="padding-top: 35px;">
-                <div class="powrot"><a href="#"">Powrót na górę strony</a></div>
             </div>
         </div>
-    </div>
 
-    <div id="referencje" class="plansza biale-tlo" style="height:145px;">
-        <div class="referencje">
-            <div class="srodkowanie">
-                <img id="strzalka-w-lewo-2" class="strzalki" src="grafika/strzalka-w-lewo.png">
-                <div class="karuzela-referencje">
-                    <img style="margin-top: 9px;" src="grafika/logo-ernst-young.png">
-                    <img style="margin-top: -6px;" src="grafika/logo-ministerstwo-zdrowia.png">
-                    <img src="grafika/logo-tnt.png">
-                    <img style="margin-top: 17px;" src="grafika/logo-vision-express.png">
-                    <img style="margin-top: -4px;" src="grafika/logo-bell.png">
-                    <img style="margin-top: 9px;" src="grafika/logo-ernst-young.png">
-                    <img style="margin-top: -6px;" src="grafika/logo-ministerstwo-zdrowia.png">
-                    <img src="grafika/logo-tnt.png">
-                    <img style="margin-top: 17px;" src="grafika/logo-vision-express.png">
-                    <img style="margin-top: -4px;" src="grafika/logo-bell.png">
+        <div id="referencje" class="plansza biale-tlo">
+            <div class="referencje">
+                <div class="srodkowanie">
+                    <img id="strzalka-w-lewo-2" class="strzalki" src="grafika/strzalka-w-lewo.png" alt="strzałka w lewo">
+                    <div class="karuzela-referencje">
+                        <img style="margin-top: 9px;" src="grafika/logo-ernst-young.png" alt="logo ernst and young">
+                        <img style="margin-top: -6px;" src="grafika/logo-ministerstwo-zdrowia.png" alt="logo ministerstwo zdrowia">
+                        <img src="grafika/logo-tnt.png" alt="logo tnt">
+                        <img style="margin-top: 17px;" src="grafika/logo-vision-express.png" alt="logo vision express">
+                        <img style="margin-top: -4px;" src="grafika/logo-bell.png" alt="logo bell">
+                        <img style="margin-top: 9px;" src="grafika/logo-ernst-young.png" alt="logo ernst and young">
+                        <img style="margin-top: -6px;" src="grafika/logo-ministerstwo-zdrowia.png" alt="logo ministerstwo zdrowia">
+                        <img src="grafika/logo-tnt.png" alt="logo tnt">
+                        <img style="margin-top: 17px;" src="grafika/logo-vision-express.png" alt="logo vision express">
+                        <img style="margin-top: -4px;" src="grafika/logo-bell.png" alt="logo bell">
+                    </div>
+                    <img id="strzalka-w-prawo-2" class="strzalki" src="grafika/strzalka-w-prawo.png" alt="strzałka w prawo">
                 </div>
-                <img id="strzalka-w-prawo-2" class="strzalki" src="grafika/strzalka-w-prawo.png">
             </div>
         </div>
-    </div>
 
-    <script src="../jq/jquery-3.4.0.min.js"></script>
-    <script type="text/javascript" src="../slick/slick.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+        <script src="../jq/jquery-3.4.0.min.js"></script>
+        <script src="../slick/slick.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>

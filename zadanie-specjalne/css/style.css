@@ -63,14 +63,19 @@ p{
 .menu{
     position:fixed;
     height: 100%;
-    width: 212px;
+    width: 203px;
+    margin-left:9px;
     left:0;
     top:0;
     background-color:white;
+    z-index:3;
+}
+.menu-poczatek{
+    margin-top:175px;
 }
 .menu ul{
     list-style-type: none;
-    margin-top:80%;
+    line-height:25px;
     font-size:1.3em;
 }
 .menu li{
@@ -80,43 +85,51 @@ p{
     text-decoration: none;
     color: #013C5E;
 }
-#strzalka-menu{
+#strzalka-zwijania{
     position:absolute;
-    margin-left:82%;
-    top:50%;
+    margin-left: 167px;
+    top:492px;
     cursor:pointer;
 }
 .menu img{
     display:block;
-    margin:40px;
+    margin: 46px;
     margin-top:20px;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 .menu hr{
     border-top: 2px dotted black;
     width:100px;
-    margin-right:80px;
+    margin-right:59px;
+    margin-top: 17px;
+    margin-bottom: 21px;
 }
-.do-rozwiniecia{
+.zwiniete{
     position:fixed;
     height: 100%;
     width: 30px;
     left:0;
     top:0;
-    padding-top:32%;
     background-color:white;
+    z-index:3;
 }
-#strzalka-zwrotna-menu{
+#strzalka-rozwijania{
     display:none;
     position:absolute;
-    top:32%;
+    top:492px;
     cursor:pointer;
     transform:rotate(180deg);
     left:0;
 }
+#logo-linked-in{
+    margin-top: 23px;
+}
 
 /* BANER */
 
+#baner{
+    height:979px;
+}
 .baner{
     position:relative;
     width:100%;
@@ -126,7 +139,7 @@ p{
     top:0;
     background-color:#013C5E;
     display:flex row;
-    z-index: 2;
+    z-index: 4;
 }
 #logo-simple{
     background-color: white;
@@ -150,18 +163,25 @@ p{
     color:white;
     text-decoration: none;
 }
+#menu-naglowek{
+    margin-left: 3px;
+}
+#odstep{
+    line-height: 30px;
+}
 .wyszukiwarka{
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
 }
 #zapytanie{
     position:absolute;
     display:none;
-    margin-top:32px;
+    margin-top:40px;
+    right:70px;
 }
 #zapytanie input{
+    width: 200px;
     font-size: 1.2em;
 }
 #ikona-lupa{
@@ -283,7 +303,7 @@ p{
     height:55px;
     clear: both;
 }
-.chcesz-newsletter{
+.newsletter-zgloszenie{
     background-color:white;
     width:855px;
     display:flex;
@@ -293,17 +313,17 @@ p{
     font-size: 1.2em;
     color: #013C5E;
 }
-.chcesz-newsletter img{
+.newsletter-zgloszenie img{
     margin-left:1px;
     margin-top:-3px;
 }
-.chcesz-newsletter input{
+.newsletter-zgloszenie input{
     height:25px;
     width:367px;
     font-size: 1.2em;
     vertical-align: middle;
 }
-.chcesz-newsletter label{
+.newsletter-zgloszenie label{
     margin-left: 4px;
     margin-top: 6px;
     letter-spacing: 0.6px;
@@ -323,6 +343,9 @@ p{
 
 /* BRANŻE */
 
+#branze{
+    height:961px;
+}
 .branze{
     padding-top: 31px;
 }
@@ -340,11 +363,11 @@ p{
     justify-content: space-between;
 }
 .kafelek{
-    width:315px;
+    position:relative;
+    width:314px;
     height:150px;
-    display: inline-block;
     margin-bottom: 22px;
-    margin-right: 2px;
+    background-color:white;
 }
 .kafelek:hover .cien{
     opacity: 0;
@@ -354,32 +377,44 @@ p{
 }
 .kafelek p{
     position:absolute;
+    width:100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color:white;
-    margin-top:67px;
     z-index: 3;
     font-size:1.2em;
     letter-spacing: 1px;
 }
 .cien{
     opacity:1;
+    margin-left:-1px;
     position: absolute;
 }
 .obraz{
     opacity: 1;
     margin-bottom:10px;
-    margin-left:1px;
+}
+.cien-widoczny{
+    margin-left:-1px;
 }
 .teksty{
     width:317px;
     color:white;
     margin-top:-19px;
-    margin-left:-3px;
     line-height:20px;
     letter-spacing: 0.2px;
+}
+#wiekszy-akapit{
+    margin-bottom:18px;
 }
 
 /* PRODUKTY */
 
+#produkty{
+    height:980px;
+}
 .produkty hr{
     border-style:dotted;
     border-color: #013C5E;
@@ -397,44 +432,28 @@ p{
     color:#013C5E;
     margin-left:10px;
 }
-.tekst-z-lewej{
-    margin-left:-20px;
-}
-.tekst-z-prawej{
-    margin-left:8px;
-}
-.teksty-produkty div{
-    word-spacing: 1.1px;
-    width: 484px;
-    letter-spacing: 1.2px;
-    line-height: 26px;
-}
-
-/* USŁUGI */
-
-.uslugi{
-    margin-top:45px;
-}
-.uslugi hr{
-    border-style:dotted;
-    border-color: white;
-    border-width: 0 0 2px 0;
+.akapit{
+    text-indent: 31px;
+    margin-top:-20px;
 }
 .pojedyncze-kolko{
+    position:relative;
     width:168px;
     margin-top: 34px;
-    color: white;
-}
-.pojedyncze-kolko p{
-    text-align: center;
-    font-size: 1.3em;
-    margin-top: 56px;
-    line-height: 26px;
 }
 .nazwa-w-kolku{
-    width:157px;
-    margin-left:3px;
+    width:100%;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
     position: absolute;
+    text-align: center;
+}
+.nazwa-w-kolku a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 26px;
 }
 .kolka{
     display: flex;
@@ -450,10 +469,42 @@ p{
     background-color: rgb(0, 136, 214);
     background-size: cover;
 }
+.tekst-z-lewej{
+    margin-left:-20px;
+}
+.tekst-z-prawej{
+    margin-left:8px;
+}
+.teksty-produkty div{
+    word-spacing: 1.1px;
+    width: 484px;
+    letter-spacing: 1.2px;
+    line-height: 26px;
+}
+
+/* USŁUGI */
+
+#uslugi{
+    height:914px;
+}
+.uslugi{
+    margin-top:45px;
+}
+#ikona-uslugi{
+    margin-left: 19px;
+}
+#odstep-naglowka-uslugi{
+    letter-spacing: 1.1px;
+}
+.uslugi hr{
+    border-style:dotted;
+    border-color: white;
+    border-width: 0 0 2px 0;
+}
 .siatka-2{
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .kolumna{
     display:flex;
@@ -489,6 +540,9 @@ p{
 
 /* AKTUALNOŚCI */
 
+#aktualnosci{
+    height:987px;
+}
 .aktualnosci hr{
     border-style:dotted;
     border-color: #013C5E;
@@ -553,6 +607,9 @@ p{
 
 /* KONTAKT */
 
+#kontakt{
+    height:900px;
+}
 .kontakt hr{
     border-style: dotted;
     border-color: white;
@@ -691,6 +748,9 @@ label.wybor{
 
 /* REFERENCJE */
 
+#referencje{
+    height:145px;
+}
 .referencje{
     margin-top:28px;
 }
@@ -712,4 +772,20 @@ label.wybor{
     margin-right: 1px;
     margin-top: -66px;
     float:right;
+}
+
+@media screen and (max-width:768px){
+    .baner{
+        height:86px;
+    }
+    #logo-simple{
+        height:63px;
+        padding: 9px 16px 14px 14px;
+    }
+    .wyszukiwarka{
+        display:none;
+    }
+    .menu{
+        width:107px;
+    }
 }
