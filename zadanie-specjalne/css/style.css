@@ -1,61 +1,57 @@
-/* Główna zawartość */
+/* Ogólne */
+
 body{
-    font-family: 'Nunito', sans-serif;
-    background-image: url("../grafika/tlo.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    font-family:'Nunito',sans-serif;
+    background-image:url("../grafika/tlo.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
     margin:0;
 }
+p{text-align:justify;}
+.biale-tlo{background-color:white;}
+.bialy-tekst{color:white;}
 .srodkowanie{
     width:1000px;
     margin:auto;
 }
-p{
-    text-align: justify;
-}
 .plansza{
-    position: relative;
+    position:relative;
     margin:0;
-}
-.biale-tlo{background-color:white;}
-.naglowek-bialy{
-    color:white;
-    text-align: center;
-    width:220px;
-    margin:auto;
-    margin-bottom: 63px;
-}
-.naglowek-bialy h1{
-    font-weight: 100;
-    font-size: 1.6em;
-    font-weight:100;
-    padding-top: 24px;
-}
-.naglowek-bialy img{
-    margin-right: 9px;
-    margin-left: 4px;
-    float:left;
 }
 .naglowek{
     color:#013C5E;
-    text-align: center;
+    text-align:center;
     width:220px;
-    padding-bottom: 42px;
+    padding-bottom:42px;
     margin:auto;
 }
 .naglowek h1{
-    color:#013C5E;
-    font-weight: 100;
-    font-size: 1.6em;
-    padding-top: 50px;
+    font-weight:100;
+    font-size:1.6em;
+    padding-top:50px;
     letter-spacing:0.3px;
 }
 .naglowek img{
-    margin-left: -2px;
-    margin-right: 13px;
-    float: left;
-    margin-top: 39px;
+    float:left;
+    margin-right:12px;
+    margin-top:38px;
+}
+.naglowek-bialy{
+    color:white;
+    text-align:center;
+    width:220px;
+    margin:auto;
+    margin-bottom:63px;
+}
+.naglowek-bialy h1{
+    font-size:1.6em;
+    font-weight:100;
+    padding-top:24px;
+}
+.naglowek-bialy img{
+    margin-right:9px;
+    float:left;
 }
 
 /* MENU */
@@ -65,31 +61,27 @@ p{
     height: 100%;
     width: 203px;
     margin-left:9px;
-    left:0;
-    top:0;
     background-color:white;
-    z-index:3;
+    z-index:4;
+    box-shadow: 0px 0px 10px;
 }
-.menu-poczatek{
-    margin-top:175px;
-}
+.menu-poczatek{margin-top:110px;}
 .menu ul{
     list-style-type: none;
     line-height:25px;
     font-size:1.3em;
 }
-.menu li{
-    margin-bottom:8px;
-}
+.menu li{margin-bottom:8px;}
 .menu ul li a{
     text-decoration: none;
     color: #013C5E;
 }
-#strzalka-zwijania{
-    position:absolute;
-    margin-left: 167px;
-    top:492px;
-    cursor:pointer;
+.menu hr{
+    width:100px;
+    margin-right:59px;
+    border-style:dotted;
+    border-color: #013C5E;
+    border-width: 0 0 2px 0;
 }
 .menu img{
     display:block;
@@ -97,32 +89,27 @@ p{
     margin-top:20px;
     margin-bottom: 0;
 }
-.menu hr{
-    border-top: 2px dotted black;
-    width:100px;
-    margin-right:59px;
-    margin-top: 17px;
-    margin-bottom: 21px;
+#strzalka-zwijania{
+    position:absolute;
+    margin-left: 167px;
+    top:48%;
+    cursor:pointer;
 }
-.zwiniete{
+.menu-zwiniete{
     position:fixed;
     height: 100%;
     width: 30px;
-    left:0;
-    top:0;
     background-color:white;
     z-index:3;
+    box-shadow:0px 0px 0px;
 }
 #strzalka-rozwijania{
     display:none;
     position:absolute;
-    top:492px;
+    top:51.5%;
     cursor:pointer;
     transform:rotate(180deg);
     left:0;
-}
-#logo-linked-in{
-    margin-top: 23px;
 }
 
 /* BANER */
@@ -138,18 +125,18 @@ p{
     right:0;
     top:0;
     background-color:#013C5E;
-    display:flex row;
-    z-index: 4;
+    display:flex;
+    flex-flow:row;
+    z-index:4;
 }
 #logo-simple{
-    background-color: white;
+    background-color:white;
     padding:19px 34px 26px 31px;
 }
 .baner ul{
     list-style-type:none;
     display:inline;
-    position: absolute;
-    top:0;
+    position:absolute;
     margin-top:42px;
 }
 .baner ul li{
@@ -162,12 +149,6 @@ p{
 .baner ul li a{
     color:white;
     text-decoration: none;
-}
-#menu-naglowek{
-    margin-left: 3px;
-}
-#odstep{
-    line-height: 30px;
 }
 .wyszukiwarka{
     position: absolute;
@@ -196,7 +177,7 @@ p{
 
 /* KARUZELA */
 
-.karuzela .full{
+.zdjecie-karuzela{
     position: absolute;
     width:100%;
     height:979px;
@@ -354,7 +335,7 @@ p{
     border-color: white;
     border-width: 0 0 2px 0;
 }
-.siatka{
+.siatka-branze{
     margin-top:50px;
     margin-left: 2px;
     display:flex;
@@ -399,21 +380,21 @@ p{
 .cien-widoczny{
     margin-left:-1px;
 }
-.teksty{
+.teksty-branze{
     width:317px;
     color:white;
     margin-top:-19px;
     line-height:20px;
     letter-spacing: 0.2px;
 }
-#wiekszy-akapit{
+#wiekszy-akapit-branze{
     margin-bottom:18px;
 }
 
 /* PRODUKTY */
 
 #produkty{
-    height:980px;
+    height:982px;
 }
 .produkty hr{
     border-style:dotted;
@@ -455,6 +436,9 @@ p{
     font-size: 1.2em;
     line-height: 26px;
 }
+.nazwa-w-kolku a:hover{
+    text-decoration: underline;
+}
 .kolka{
     display: flex;
     flex-flow: row wrap;
@@ -469,10 +453,10 @@ p{
     background-color: rgb(0, 136, 214);
     background-size: cover;
 }
-.tekst-z-lewej{
+.tekst-z-lewej-produkty{
     margin-left:-20px;
 }
-.tekst-z-prawej{
+.tekst-z-prawej-produkty{
     margin-left:8px;
 }
 .teksty-produkty div{
@@ -485,7 +469,7 @@ p{
 /* USŁUGI */
 
 #uslugi{
-    height:914px;
+    height:912px;
 }
 .uslugi{
     margin-top:45px;
@@ -500,42 +484,52 @@ p{
     border-style:dotted;
     border-color: white;
     border-width: 0 0 2px 0;
+    margin-bottom: 24px;
 }
-.siatka-2{
+.siatka-uslugi{
+    width:900px;
+    margin:auto;
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .kolumna{
+    height:450px;
+    width: 300px;
     display:flex;
     flex-flow: column;
-    justify-content: space-around;
-    height:400px;
-    width: 330px;
-    margin-top: 18px;
-    margin-left: 58px;
+    justify-content: space-between;
+    align-items:center;
 }
 .kolumna-srodkowa{
-    display:flex;
-    flex-flow: column;
-    align-items: center;
-    width:30%;
-    height:400px;
     justify-content: center;
 }
-.siatka-2 p{
+.element{
+    height:180px;
+    width:300px;
+    margin:auto;
+    text-align: center;
+}
+.ikona-w-siatce{
+    height:80px;
+    line-height: 147px;
+    vertical-align: bottom;
+}
+.siatka-uslugi p{
     color:white;
     text-align:center;
 }
-.kolumna img{
-    margin-left:108px;
-    margin-top:9px;
+.teksty-uslugi{
+    width:995px;
+    margin-left:5px;
+    margin-top:-5px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size:1.3em;
 }
-.bialy-tekst{
-    color:white;
-}
-.teksciki{
-    letter-spacing: 0.5px;
+.grupa-tekstow-uslugi{
+    width:48%;
 }
 
 /* AKTUALNOŚCI */
@@ -543,10 +537,19 @@ p{
 #aktualnosci{
     height:987px;
 }
+.naglowek-aktualnosci{
+    width:300px;
+}
+#ikona-aktualnosci{margin-top: 43px;}
+#tytul-aktualnosci{
+    font-size: 1.75em;
+    padding-top: 70px;
+}
 .aktualnosci hr{
     border-style:dotted;
     border-color: #013C5E;
     border-width: 0 0 2px 0;
+    margin-top:2px;
 }
 .mini-karuzela{
     width:867px;
@@ -604,11 +607,28 @@ p{
 .opcja a:hover{
     text-decoration: underline;
 }
+#czwarta-opcja{
+    margin-top: 32px;
+}
 
 /* KONTAKT */
 
 #kontakt{
     height:900px;
+}
+.kontakt{
+    width:836px;
+}
+.naglowek-kontakt{
+    margin-top:49px;
+    padding-right:27px;
+}
+#ikona-kontakt{
+    margin-left: 12px;
+}
+#tytul-kontakt{
+    letter-spacing: 3px;
+    margin-right: -27px;
 }
 .kontakt hr{
     border-style: dotted;
@@ -617,7 +637,7 @@ p{
     padding-top: 5px;
 }
 .adresy{
-    width:100%;
+    width:900px;
     display: flex;
     margin: 37px auto;
     justify-content: space-between;
@@ -631,10 +651,16 @@ p{
 }
 .dane-kontaktowe{
     color:white;
-    width:255px;
+    width:290px;
 }
 .dane-kontaktowe p{
     line-height:3px;
+}
+.odstep-dane-kontaktowe{
+    margin-bottom:37px;
+}
+#drugi-separator-kontakt{
+    padding-top:0;
 }
 .druga-czesc{
     color:white;
@@ -653,6 +679,7 @@ p{
 }
 .formularz h2{
     margin-right: 5px;
+    margin-bottom: 15px;
 }
 .formularz input, .formularz textarea, .formularz label, .formularz h2{
     display:block;
@@ -677,7 +704,7 @@ p{
 }
 .formularz label{
     width:260px;
-    margin-bottom: 16px;
+    margin-top: 16px;
     text-align:left;
     display:inline-block;
 }
@@ -733,6 +760,9 @@ label.wybor{
 .praca a:hover{
     text-decoration: underline;
 }
+#trzeci-separator-kontakt{
+    padding-top: 35px;
+}
 .powrot{
     text-align: center;
     margin-left:10px;
@@ -773,8 +803,42 @@ label.wybor{
     margin-top: -66px;
     float:right;
 }
+#margines-logo-biale-fb{
+    margin-top: -18px;
+}
+#margines-mail-kontakt{
+    margin-top:45px;
+}
+#margines-zobacz-oferty-kontakt{
+    margin-top:83px;
+}
+.logo-ernst{
+    margin-top: 9px;
+}
+.logo-ministerstwo{
+    margin-top: -6px;
+}
+.logo-vision{
+    margin-top: 17px;
+}
+.logo-bell{
+    margin-top: -4px;
+}
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
+    .wyszukiwarka{
+        display:none;
+    }
+}
+
+@media screen and (max-width:1560px){
+    .baner ul li{
+        font-size:1em;
+        margin-right:34px;
+    }
+}
+
+@media screen and (max-width:1440px){
     .baner{
         height:86px;
     }
@@ -782,10 +846,21 @@ label.wybor{
         height:63px;
         padding: 9px 16px 14px 14px;
     }
-    .wyszukiwarka{
-        display:none;
-    }
     .menu{
-        width:107px;
+        width:146px;
+        margin-left:-30px;
+    }
+    .menu ul{
+        line-height:20px;
+    }
+    .menu li{
+        margin-bottom:0;
+    }
+    .menu ul li{
+        font-size:0.7em;
+    }
+    .menu hr {
+        width: 100px;
+        margin-right: 10px;
     }
 }

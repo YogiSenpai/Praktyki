@@ -11,23 +11,21 @@ $(document).ready(function(){
     $('#strzalka-zwijania').click(function(){
         $(".menu").css({"display":"none"});
         $("#strzalka-rozwijania").css({"display":"block"});
+        $(".menu-zwiniete").css({"box-shadow":"0px 0px 10px"});
     });
     $('#strzalka-rozwijania').click(function(){
         $(".menu").css({"display":"block"});
         $("#strzalka-rozwijania").css({"display":"none"});
+        $(".menu-zwiniete").css({"box-shadow":"0px 0px 0px"});
     });
 
     $(window).scroll(function (event) {
         scroll = $(window).scrollTop();
             if(scroll>30){
-                $(".menu-poczatek").css({"margin-top":"74px"});
-                $("#strzalka-zwijania").css({"top":"392px"});
-                $("#strzalka-rozwijania").css({"top":"414px"});
+                $(".menu-poczatek").css({"margin-top":"50px"});
             }
             else if(scroll<=30){
-                $(".menu-poczatek").css({"margin-top":"175px"});
-                $("#strzalka-zwijania").css({"top":"492px"});
-                $("#strzalka-rozwijania").css({"top":"514px"});
+                $(".menu-poczatek").css({"margin-top":"110px"});
             }
     });
 
