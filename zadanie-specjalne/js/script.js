@@ -11,7 +11,7 @@ $(document).ready(function(){
     $('#strzalka-zwijania').click(function(){
         $(".menu").css({"display":"none"});
         $("#strzalka-rozwijania").css({"display":"block"});
-        $(".menu-zwiniete").css({"box-shadow":"0px 0px 10px"});
+        $(".menu-zwiniete").css({"box-shadow":"0px 0px 8px"});
     });
     $('#strzalka-rozwijania').click(function(){
         $(".menu").css({"display":"block"});

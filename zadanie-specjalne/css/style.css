@@ -4,8 +4,6 @@ body{
     font-family:'Nunito',sans-serif;
     background-image:url("../grafika/tlo.png");
     background-size:100%;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
     margin:0;
 }
 p{text-align:justify;}
@@ -60,10 +58,9 @@ p{text-align:justify;}
     position:fixed;
     height: 100%;
     width: 203px;
-    margin-left:9px;
     background-color:white;
     z-index:4;
-    box-shadow: 0px 0px 10px;
+    box-shadow: 0px 0px 8px;
 }
 .menu-poczatek{margin-top:110px;}
 .menu ul{
@@ -80,7 +77,7 @@ p{text-align:justify;}
     width:100px;
     margin-right:59px;
     border-style:dotted;
-    border-color: #013C5E;
+    border-color: gray;
     border-width: 0 0 2px 0;
 }
 .menu img{
@@ -140,7 +137,7 @@ p{text-align:justify;}
     margin-top:42px;
 }
 .baner ul li{
-    display: inline;
+    display: inline-block;
     font-size: 1.2em;
     font-weight: 100;
     margin-right: 42px;
@@ -325,7 +322,7 @@ p{text-align:justify;}
 /* BRANŻE */
 
 #branze{
-    height:961px;
+    height: 961px;
 }
 .branze{
     padding-top: 31px;
@@ -348,13 +345,16 @@ p{text-align:justify;}
     width:314px;
     height:150px;
     margin-bottom: 22px;
-    background-color:white;
 }
-.kafelek:hover .cien{
-    opacity: 0;
+.kafelek:hover .obraz{
+    filter:brightness(100%);
 }
-.kafelek p:hover .cien{
-    opacity: 0;
+.kafelek p:hover .obraz{
+    filter:brightness(100%);
+}
+.obraz{
+    filter:brightness(50%);
+    margin-bottom:10px;
 }
 .kafelek p{
     position:absolute;
@@ -367,15 +367,6 @@ p{text-align:justify;}
     z-index: 3;
     font-size:1.2em;
     letter-spacing: 1px;
-}
-.cien{
-    opacity:1;
-    margin-left:-1px;
-    position: absolute;
-}
-.obraz{
-    opacity: 1;
-    margin-bottom:10px;
 }
 .cien-widoczny{
     margin-left:-1px;
@@ -406,7 +397,6 @@ p{text-align:justify;}
     flex-flow: row;
     margin:auto;
     justify-content: space-around;
-    width:1000px;
     font-size:1.2em;
     word-spacing: 15px;
     margin-top:40px;
@@ -419,8 +409,8 @@ p{text-align:justify;}
 }
 .pojedyncze-kolko{
     position:relative;
-    width:168px;
     margin-top: 34px;
+    margin-right: 4px;
 }
 .nazwa-w-kolku{
     width:100%;
@@ -443,13 +433,13 @@ p{text-align:justify;}
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width:1000px;
+    width: 1000px;
     margin-top: 57px;
 }
 .kolka img{
     border-radius: 50%;
-    width: 163px;
-    height: 163px;
+    width: 100%;
+    height: 100%;
     background-color: rgb(0, 136, 214);
     background-size: cover;
 }
@@ -485,6 +475,9 @@ p{text-align:justify;}
     border-color: white;
     border-width: 0 0 2px 0;
     margin-bottom: 24px;
+}
+.siatka-uslugi-tablet{
+    display:none;
 }
 .siatka-uslugi{
     width:900px;
@@ -744,6 +737,7 @@ label.wybor{
 .social-media a{
     margin-left: -16px;
 }
+.zadaj-pytanie{display:none;}
 .praca{
     width:210px;
 }
@@ -825,26 +819,9 @@ label.wybor{
     margin-top: -4px;
 }
 
-@media screen and (max-width:1024px){
-    .wyszukiwarka{
-        display:none;
-    }
-}
-
-@media screen and (max-width:1560px){
-    .baner ul li{
-        font-size:1em;
-        margin-right:34px;
-    }
-}
-
-@media screen and (max-width:1440px){
-    .baner{
-        height:86px;
-    }
-    #logo-simple{
-        height:63px;
-        padding: 9px 16px 14px 14px;
+@media screen and (max-width:1440px) and (min-width:768px){
+    .srodkowanie{
+        width:80%;
     }
     .menu{
         width:146px;
@@ -855,12 +832,332 @@ label.wybor{
     }
     .menu li{
         margin-bottom:0;
-    }
-    .menu ul li{
         font-size:0.7em;
     }
     .menu hr {
-        width: 100px;
-        margin-right: 10px;
+        width: 45px;
+        margin-left: 40px;
+    }
+    #strzalka-zwijania{
+        width:17px;
+        margin-left: 126px;
+    }
+    .menu-zwiniete{
+        width: 17px;
+        background-color:white;
+        z-index:3;
+        box-shadow:0px 0px 0px;
+    }
+    #strzalka-rozwijania{
+        width:100%;
+    }
+    .baner{
+        height:86px;
+    }
+    #logo-simple{
+        height:63px;
+        padding: 9px 15px 15px 15px;
+    }
+    .wyszukiwarka{
+        display:none;
+    }
+    .baner .srodkowanie{
+        width:100%;
+        margin-left:0;
+    }
+    #baner{height:530px;}
+    .baner ul li{
+        font-size:1em;
+        width: 8%;
+    }
+    .karuzela{
+        height:444px;
+        position:relative;
+    }
+    .zdjecie-karuzela{
+        height:100%;
+    }
+    .tekst-na-grafice{
+        bottom: 120px;
+        width: 450px;
+        margin-left:0;
+    }
+
+    /* BRANŻE */
+
+    #branze{
+        height:446px;
+    }
+    .branze {
+        padding-top: 5px;
+    }
+    .naglowek-bialy{
+        width:140px;
+        margin-bottom: 26px;
+    }
+    .naglowek-bialy h1{
+        font-size:1em;
+        padding-top: 19px;
+    }
+    .naglowek-bialy img {
+        margin-right: 0px;
+        margin-left: 6px;
+        margin-top: 5px;
+        width: 34%;
+    }
+    .siatka-branze {
+        margin-top: 18px;
+    }
+    .kafelek{
+        width:30%;
+        height: auto;
+        margin-bottom: 1px;
+    }
+    .kafelek p{
+        font-size: 0.7em;
+    }
+    .obraz{
+        width:100%;
+    }
+    .teksty-branze{
+        display:none;
+    }
+
+    /* PRODUKTY */
+
+    #produkty{
+        height:445px;
+    }
+    .naglowek{
+        width:150px;
+        padding-bottom: 8px;
+    }
+    .naglowek h1{
+        font-size: 1em;
+        display: inline-block;
+        padding-top: 16px;
+    }
+    .naglowek img {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 25%;
+    }
+    .teksty-produkty{
+        display: none;
+    }
+    .kolka{
+        width:90%;
+        margin: auto;
+        margin-top: 35px;
+    }
+    .pojedyncze-kolko{
+        width:17%;
+        margin-right:0;
+        margin-top: 24px;
+    }
+
+    /* USŁUGI */
+
+    #uslugi{
+        height:434px;
+    }
+    .uslugi{
+        margin-top: 0px;
+    }
+    #ikona-uslugi{
+        margin-left: 14px;
+        margin-top: 14px;
+        width: 30%;
+    }
+    #odstep-naglowka-uslugi{
+        letter-spacing: 0;
+        padding-top: 27px;
+    }
+    .uslugi hr{
+        margin-bottom: 0px;
+    }
+    .siatka-uslugi{
+        display:none;
+    }
+    .teksty-uslugi{
+        display:none;
+    }
+    .siatka-uslugi-tablet{
+        display:block;
+        width:100%;
+        display: flex;
+        flex-flow: row wrap;
+        margin:auto;
+        margin-top: 32px;
+    }
+    .rzad{
+        width: 100%;
+        display:flex;
+        flex-flow: row;
+    }
+    .rzad-srodkowy .element-tablet{
+        margin-left: 33%;
+    }
+    .element-tablet{
+        height:90px;
+        width:50%;
+        margin:auto;
+        margin-bottom: 19px;
+    }
+    .ikona-w-siatce-tablet{
+        width:72px;
+        line-height: 60px;
+        float: left;
+        margin-left: 30px;
+    }
+    .element-tablet img{
+        width:48px;
+    }
+    .siatka-uslugi-tablet p{
+        color:white;
+        font-size: 0.8em;
+        text-align: left;
+    }
+    .wiekszy-element{
+        width: 58%;
+    }
+    .mniejszy-element{
+        width:42%;
+    }
+    .troche-w-prawo{
+        margin-left: 34px;
+    }
+
+    /* AKTUALNOŚCI */
+
+    #aktualnosci{
+        height:445px;
+    }
+    #ikona-aktualnosci{
+        margin-top: 26px;
+        margin-left:-16px;
+        width:33%;
+    }
+    #tytul-aktualnosci{
+        font-size: 1em;
+        padding-top:30px;
+    }
+    .aktualnosci hr{
+        margin-top: 8px;
+    }
+    .mini-karuzela {
+        width: 80%;
+        margin: auto;
+        margin-top: 84px;
+        font-size: 0.8em;
+        margin-left: 54px;
+    }
+    .mini-karuzela p{
+        display:none;
+    }
+    .opcja img{
+        width:100%;
+    }
+    #strzalka-w-lewo {
+        margin-left: 12px;
+        margin-top: 170px;
+        position: absolute;
+    }
+    .strzalki {
+        height: 26px;
+    }
+    .mini-karuzela h3 {
+        margin-top: 10px;
+    }
+    #strzalka-w-prawo {
+        margin-right: 11px;
+        margin-top: -97px;
+    }
+    .opcja a {
+        padding-top: 4px;
+    }
+
+    /* KONTAKT */
+
+    #kontakt {
+        height: 315px;
+    }
+    #ikona-kontakt {
+        margin-left: 6px;
+        margin-top: -16px;
+    }
+    #tytul-kontakt {
+        margin-right: -38px;
+    }
+    .naglowek-bialy h1 {
+        padding-top: 0px;
+    }
+    .naglowek-kontakt {
+        margin-top: 37px;
+    }
+    .formularz{
+        display:none;
+    }
+    .social-media{
+        display:none;
+    }
+    #margines-zobacz-oferty-kontakt{display:none;}
+    .zadaj-pytanie{
+        display:block;
+        margin-top: -28px;
+        margin-left:10px;
+    }
+    .dane-kontaktowe p{
+        font-size: 0.75em;
+        line-height: 1px;
+    }
+    .odstep-dane-kontaktowe {
+        margin-bottom: 30px;
+    }
+    .adresy{
+        width:100%;
+        margin: 19px auto;
+    }
+    .troche-w-prawo-2{
+        margin-left:-20px;
+    }
+    .druga-czesc h2 {
+        font-weight: 100;
+        margin-left: 0px;
+    }
+    .druga-czesc{
+        font-size: 0.8em;
+    }
+    .praca {
+        margin-left: 75px;
+        margin-top: -30px;
+    }
+    .praca p {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    #margines-mail-kontakt {
+        margin-top: -12px;
+    }
+    .zadaj-pytanie a{
+        text-decoration: none;
+        color:white;
+    }
+    #trzeci-separator-kontakt{display:none;}
+    .powrot{display:none;}
+
+    /* REFERENCJE */
+
+    .karuzela-referencje {
+        width: 80%;
+    }
+    #strzalka-w-prawo-2 {
+        margin-top: -53px;
+    }
+    .loga-menu{
+        display:inline;
+        margin-left:40px;
+        margin:0;
     }
 }
