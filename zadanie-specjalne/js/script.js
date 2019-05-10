@@ -7,7 +7,7 @@ $(document).ready(function(){
             $("#zapytanie").animate({
                 opacity: "toggle"
               });
-    })
+    });
     $('#strzalka-zwijania').click(function(){
         $(".menu").css({"display":"none"});
         $("#strzalka-rozwijania").css({"display":"block"});
@@ -29,12 +29,12 @@ $(document).ready(function(){
             }
     });
 
-    $('.mini-karuzela').slick({
+    $('#mini-karuzela').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        nextArrow: '#strzalka-w-prawo',
-        prevArrow: '#strzalka-w-lewo'
+        nextArrow: '.strzalka-w-prawo',
+        prevArrow: '.strzalka-w-lewo'
     });
 
     $('.karuzela-referencje').slick({
@@ -45,7 +45,11 @@ $(document).ready(function(){
         variableWidth: true,
         nextArrow: '#strzalka-w-prawo-2',
         prevArrow: '#strzalka-w-lewo-2'
-      });
+    });
+
+    $('#mini-karuzela-smartfon').slick();
+    $('#adresy').slick();
+
 });
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -51,6 +51,7 @@ p{text-align:justify;}
     margin-right:9px;
     float:left;
 }
+#mini-karuzela{display:block;}
 
 /* MENU */
 
@@ -318,6 +319,12 @@ p{text-align:justify;}
     color:#013C5E;
     cursor: pointer;
 }
+#chcesz-newsletter{
+    display:block;
+}
+#sam-napis-newsletter{
+    display:none;
+}
 
 /* BRANŻE */
 
@@ -455,6 +462,9 @@ p{text-align:justify;}
     letter-spacing: 1.2px;
     line-height: 26px;
 }
+.nazwy-produkty{
+    display:none;
+}
 
 /* USŁUGI */
 
@@ -524,6 +534,9 @@ p{text-align:justify;}
 .grupa-tekstow-uslugi{
     width:48%;
 }
+.lista-uslugi{
+    display:none;
+}
 
 /* AKTUALNOŚCI */
 
@@ -544,26 +557,27 @@ p{text-align:justify;}
     border-width: 0 0 2px 0;
     margin-top:2px;
 }
-.mini-karuzela{
+#mini-karuzela{
     width:867px;
     display:inline-flex;
     flex-flow: row;
     margin:auto;
-    margin-top: -216px;
+    position: absolute;
+    margin-top: 8%;
     align-items: center;
     justify-content: stretch;
     font-size: 0.8em;
-    margin-left:68px;
+    margin-left: 20px;
 }
-.mini-karuzela h3{
+#mini-karuzela h3{
     font-size: 1em;
     margin-top:32px;
 }
-.mini-karuzela h2{
+#mini-karuzela h2{
     font-size: 1em;
     font-weight: 100;
 }
-.mini-karuzela p{
+#mini-karuzela p{
     margin-top:-5px;
     margin-bottom:34px
 }
@@ -571,13 +585,13 @@ p{text-align:justify;}
     height: 42px;
     display: inline-block;
 }
-#strzalka-w-lewo{
+.strzalka-w-lewo{
     margin-right:30px;
     margin-top: 297px;
 }
-#strzalka-w-prawo{
+.strzalka-w-prawo{
     margin-right: 5px;
-    margin-top: -194px;
+    margin-top: 29%;
     float:right;
 }
 .strzalki:hover{
@@ -602,6 +616,9 @@ p{text-align:justify;}
 }
 #czwarta-opcja{
     margin-top: 32px;
+}
+#mini-karuzela-smartfon{
+    display:none;
 }
 
 /* KONTAKT */
@@ -769,6 +786,8 @@ label.wybor{
 .powrot a:hover{
     text-decoration: underline;
 }
+.do-znikniecia-gdy-smartfon{display:block;}
+.do-znikniecia-gdy-komputer{display:none;}
 
 /* REFERENCJE */
 
@@ -819,7 +838,7 @@ label.wybor{
     margin-top: -4px;
 }
 
-@media screen and (max-width:1440px) and (min-width:768px){
+@media screen and (max-width:1440px){
     .srodkowanie{
         width:80%;
     }
@@ -861,6 +880,9 @@ label.wybor{
     .wyszukiwarka{
         display:none;
     }
+    #zapisz-sie{
+        width:20%;
+    }
     .baner .srodkowanie{
         width:100%;
         margin-left:0;
@@ -879,14 +901,37 @@ label.wybor{
     }
     .tekst-na-grafice{
         bottom: 120px;
-        width: 450px;
+        width: 60%;
+        left: 30%;
         margin-left:0;
+        font-size: 1em;
+    }
+    #chcesz-newsletter{
+        display:none;
+    }
+    #sam-napis-newsletter{
+        display:block;
+    }
+    .dolna-sekcja {
+        width: 95%;
+        left: 4%;
+        margin-left:0;
+    }
+    #baner-aktualnosci{
+        margin-left:-20px;
+    }
+    .newsletter-zgloszenie{
+        width: 70%;
+    }
+    .newsletter-zgloszenie input {
+        width: 60%;
     }
 
     /* BRANŻE */
 
     #branze{
-        height:446px;
+        height: auto;
+        padding-bottom: 20px;
     }
     .branze {
         padding-top: 5px;
@@ -897,6 +942,8 @@ label.wybor{
     }
     .naglowek-bialy h1{
         font-size:1em;
+    }
+    .branze .naglowek-bialy h1{
         padding-top: 19px;
     }
     .naglowek-bialy img {
@@ -913,7 +960,8 @@ label.wybor{
         height: auto;
         margin-bottom: 1px;
     }
-    .kafelek p{
+    .kafelek p {
+        top: 30%;
         font-size: 0.7em;
     }
     .obraz{
@@ -926,7 +974,8 @@ label.wybor{
     /* PRODUKTY */
 
     #produkty{
-        height:445px;
+        height: auto;
+        padding-bottom: 20px;
     }
     .naglowek{
         width:150px;
@@ -956,11 +1005,14 @@ label.wybor{
         margin-right:0;
         margin-top: 24px;
     }
-
+    .nazwa-w-kolku a {
+        font-size: 0.7em;
+    }
     /* USŁUGI */
 
     #uslugi{
-        height:434px;
+        height: auto;
+        padding-bottom: 20px;
     }
     .uslugi{
         margin-top: 0px;
@@ -1026,13 +1078,14 @@ label.wybor{
         width:42%;
     }
     .troche-w-prawo{
-        margin-left: 34px;
+        margin-left: 60px;
     }
 
     /* AKTUALNOŚCI */
 
     #aktualnosci{
-        height:445px;
+        height: auto;
+        padding-bottom: 20px;
     }
     #ikona-aktualnosci{
         margin-top: 26px;
@@ -1046,33 +1099,33 @@ label.wybor{
     .aktualnosci hr{
         margin-top: 8px;
     }
-    .mini-karuzela {
+    #mini-karuzela {
         width: 80%;
         margin: auto;
-        margin-top: 84px;
+        margin-top: -110px;
+        position: relative;
         font-size: 0.8em;
         margin-left: 54px;
     }
-    .mini-karuzela p{
+    #mini-karuzela p{
         display:none;
     }
     .opcja img{
         width:100%;
     }
-    #strzalka-w-lewo {
+    .strzalka-w-lewo {
         margin-left: 12px;
-        margin-top: 170px;
-        position: absolute;
+        margin-top: 10%;
     }
     .strzalki {
         height: 26px;
     }
-    .mini-karuzela h3 {
+    #mini-karuzela h3 {
         margin-top: 10px;
     }
-    #strzalka-w-prawo {
-        margin-right: 11px;
-        margin-top: -97px;
+    .strzalka-w-prawo {
+        margin-right: 20px;
+        margin-top: -20%;
     }
     .opcja a {
         padding-top: 4px;
@@ -1081,7 +1134,8 @@ label.wybor{
     /* KONTAKT */
 
     #kontakt {
-        height: 315px;
+        height: auto;
+        padding-bottom: 20px;
     }
     #ikona-kontakt {
         margin-left: 6px;
@@ -1153,11 +1207,161 @@ label.wybor{
         width: 80%;
     }
     #strzalka-w-prawo-2 {
-        margin-top: -53px;
+        margin-top: -48px;
     }
     .loga-menu{
         display:inline;
         margin-left:40px;
         margin:0;
+    }
+    #mini-karuzela{display:block;}
+}
+
+@media screen and (max-width:767px){
+    .do-znikniecia-gdy-smartfon{display:none;}
+    .do-znikniecia-gdy-komputer{display:block;}
+    #strzalka-zwijania{
+        width: 13px;
+        margin-left: 86px;
+    }
+    .menu-zwiniete{
+        width: 17px;
+        background-color:white;
+        z-index:3;
+        box-shadow:0px 0px 0px;
+    }
+    #strzalka-rozwijania{
+        width:100%;
+    }
+    .baner ul{
+        display:none;
+    }
+    #logo-simple {
+        background-color: white;
+        padding: 5px 10px 5px 10px;
+        width: 130px;
+        height: 100px;
+        margin-left: 30%;
+    }
+    .wyszukiwarka{
+        display:none;
+    }
+    .menu hr {
+        width: 40px;
+        margin-left: 38px;
+    }
+    .menu{
+        font-size: 0.6em;
+        width: 100px;
+        margin-left: -36px;
+    }
+    .karuzela{
+        height:444px;
+    }
+    #sam-napis-newsletter{
+        display:none;
+    }
+    .newsletter-zgloszenie {
+        width: 65%;
+    }
+    .newsletter-zgloszenie input {
+        width: 66%;
+    }
+    #zapisz-sie {
+        width: 30%;
+    }
+    .tekst-na-grafice{
+        display:none;
+    }
+    .kafelek p {
+        font-size: 0.5em;
+        top: 30%;
+    }
+    .kolka{
+        margin-top: 0px;
+    }
+    .nazwa-w-kolku a {
+        font-size: 0.5em;
+        line-height: 0px;
+    }
+    .kolka{
+        display:none;
+    }
+    .nazwy-produkty{
+        display:block;
+        text-align:center;
+    }
+    .nazwy-produkty a{
+        text-decoration: none;
+        color: #013C5E;
+    }
+    .nazwy-produkty div{
+        margin: 20px 0;
+    }
+    .siatka-uslugi-tablet{
+        display:none;
+    }
+    .lista-uslugi{
+        display:block;
+        text-align:center;
+    }
+    .lista-uslugi{
+        margin-top:20px;
+    }
+    .lista-uslugi p{
+        color:white;
+        text-align: center;
+    }
+    .lista-uslugi img{
+        width:15%;
+    }
+    #mini-karuzela{
+        display:none;
+    }
+    #mini-karuzela-smartfon{
+        text-align: center;
+        font-size: 0.8em;
+        display:block;
+    }
+    .strzalki{
+       z-index:2;
+    }
+    .opcja-smartfon{
+        width:80%;
+    }
+    .dane-kontaktowe p{
+        text-align: center;
+    }
+    .troche-w-prawo-2 {
+        margin-left: 0;
+    }
+    .strzalka-w-prawo {
+        margin-top: -45%;
+    }
+    #mini-karuzela-smartfon img {
+        width:60%;
+        margin-left:20%;
+    }
+    #mini-karuzela p {
+        width: 80%;
+        margin-left: 30px;
+    }
+    .praca{
+        margin-left: 45px;
+    }
+    .naglowek h1{
+        font-weight: 500;
+    }
+    .naglowek-bialy h1{
+        font-weight: 500;
+    }
+    #tytul-aktualnosci{
+        font-size: 0.9em;
+    }
+    .adresy{display:none;}
+    #adresy{display:block;}
+    .dane-kontaktowe a{
+        text-decoration: none;
+        color:white;
     }
 }
